@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 700" width="1400" height="700" role="img" aria-label="Фото для галереи 5">
+  <rect width="1400" height="700" fill="#fdf6fa"/>
+  <rect x="10" y="10" width="1380" height="680" rx="18" fill="none"
+        stroke="#e6c8da" stroke-width="3" stroke-dasharray="14 12"/>
+  <g transform="translate(700,288)" fill="none" stroke="#dcb3cb" stroke-width="6.7"
+     stroke-linejoin="round" stroke-linecap="round">
+    <rect x="-112" y="-81" width="224" height="161" rx="20"/>
+    <circle cx="-50" cy="-25" r="22"/>
+    <path d="M -101 67 L -11 -11 L 50 36 L 90 6 L 106 67 Z"/>
+  </g>
+  <text x="700" y="456" text-anchor="middle"
+        font-family="Nunito, Segoe UI, Arial, sans-serif" font-size="38" font-weight="700" fill="#b98aa4">Фото для галереи 5</text>
+  <text x="700" y="514" text-anchor="middle"
+        font-family="Nunito, Segoe UI, Arial, sans-serif" font-size="24" fill="#c9a6b8">1400×700</text>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1150" width="1000" height="1150" role="img" aria-label="Фото для первого экрана">
+  <rect width="1000" height="1150" fill="#fdf6fa"/>
+  <rect x="10" y="10" width="980" height="1130" rx="18" fill="none"
+        stroke="#e6c8da" stroke-width="3" stroke-dasharray="14 12"/>
+  <g transform="translate(500,487)" fill="none" stroke="#dcb3cb" stroke-width="9.6"
+     stroke-linejoin="round" stroke-linecap="round">
+    <rect x="-160" y="-115" width="320" height="230" rx="29"/>
+    <circle cx="-72" cy="-35" r="32"/>
+    <path d="M -144 96 L -16 -16 L 72 51 L 128 8 L 152 96 Z"/>
+  </g>
+  <text x="500" y="727" text-anchor="middle"
+        font-family="Nunito, Segoe UI, Arial, sans-serif" font-size="55" font-weight="700" fill="#b98aa4">Фото для первого экрана</text>
+  <text x="500" y="810" text-anchor="middle"
+        font-family="Nunito, Segoe UI, Arial, sans-serif" font-size="34" fill="#c9a6b8">вертикальное · 1000×1150</text>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-label="Фото: Брови">
+  <rect width="1200" height="900" fill="#fdf6fa"/>
+  <rect x="10" y="10" width="1180" height="880" rx="18" fill="none"
+        stroke="#e6c8da" stroke-width="3" stroke-dasharray="14 12"/>
+  <g transform="translate(600,371)" fill="none" stroke="#dcb3cb" stroke-width="8.6"
+     stroke-linejoin="round" stroke-linecap="round">
+    <rect x="-144" y="-104" width="288" height="207" rx="26"/>
+    <circle cx="-65" cy="-32" r="29"/>
+    <path d="M -130 86 L -14 -14 L 65 46 L 115 7 L 137 86 Z"/>
+  </g>
+  <text x="600" y="587" text-anchor="middle"
+        font-family="Nunito, Segoe UI, Arial, sans-serif" font-size="50" font-weight="700" fill="#b98aa4">Фото: Брови</text>
+  <text x="600" y="661" text-anchor="middle"
+        font-family="Nunito, Segoe UI, Arial, sans-serif" font-size="31" fill="#c9a6b8">горизонтальное · 1200×900</text>
+</svg>
