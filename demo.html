@@ -1,0 +1,1946 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>1618 Avenue — салон красоты в центре Москвы</title>
+<meta name="description" content="1618 Avenue — уютный салон красоты на Большой Грузинской. Маникюр, ресницы, брови, волосы, уходы. Онлайн-запись по свободным часам.">
+<meta property="og:title" content="1618 Avenue — салон красоты">
+<meta property="og:description" content="Красота, забота и немного волшебства. Онлайн-запись на любой свободный час.">
+<meta name="theme-color" content="#ffdcec">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎀</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ==========================================================================
+   1618 Avenue — демо-лендинг салона красоты
+   Палитра: сахарная вата, небо с барашками, розовое золото
+   ========================================================================== */
+
+:root {
+  --pink-50:  #fff7fb;
+  --pink-100: #ffeef6;
+  --pink-200: #ffdcec;
+  --pink-300: #ffc4df;
+  --pink-400: #ff9fc9;
+  --rose:     #e86fa4;
+  --rose-deep:#c9497f;
+  --lilac:    #efe3ff;
+  --lilac-2:  #d9c2f7;
+  --sky:      #eaf4ff;
+  --sky-2:    #cfe6ff;
+  --cream:    #fffaf6;
+  --gold:     #d8b27c;
+  --gold-2:   #b9915b;
+  --ink:      #55303f;
+  --ink-soft: #8a6b78;
+  --muted:    #9a7c8a;
+  --white:    #ffffff;
+
+  --radius-xs: 12px;
+  --radius-sm: 18px;
+  --radius:    28px;
+  --radius-lg: 40px;
+
+  --shadow-sm: 0 6px 18px rgba(200, 120, 160, .12);
+  --shadow:    0 18px 46px rgba(197, 112, 155, .18);
+  --shadow-lg: 0 34px 80px rgba(186, 104, 148, .24);
+
+  --font-display: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  --font-body: "Nunito", "Segoe UI", system-ui, -apple-system, sans-serif;
+
+  --container: 1180px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--ink);
+  background:
+    radial-gradient(1200px 600px at 10% -5%, var(--pink-100), transparent 60%),
+    radial-gradient(1000px 700px at 95% 8%, var(--lilac), transparent 55%),
+    linear-gradient(180deg, var(--pink-50) 0%, var(--cream) 45%, var(--pink-50) 100%);
+  font-size: 16px;
+  line-height: 1.65;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; cursor: pointer; }
+
+h1, h2, h3, .display {
+  font-family: var(--font-display);
+  font-weight: 500;
+  letter-spacing: .01em;
+  line-height: 1.12;
+  margin: 0 0 .4em;
+}
+
+h1 { font-size: clamp(2.3rem, 4.6vw, 3.9rem); }
+h2 { font-size: clamp(2rem, 4.4vw, 3.2rem); }
+h3 { font-size: clamp(1.25rem, 2.2vw, 1.6rem); }
+
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding-inline: 20px;
+}
+
+section { position: relative; }
+
+.section {
+  padding-block: clamp(56px, 8vw, 110px);
+}
+
+.section-head {
+  text-align: center;
+  max-width: 660px;
+  margin: 0 auto clamp(32px, 5vw, 60px);
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: .78rem;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--rose-deep);
+  background: rgba(255, 255, 255, .7);
+  border: 1px solid var(--pink-200);
+  padding: 7px 16px;
+  border-radius: 999px;
+  margin-bottom: 18px;
+  box-shadow: var(--shadow-sm);
+}
+
+.lead { color: var(--muted); font-size: 1.05rem; }
+
+/* ---------- Кнопки ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 0;
+  border-radius: 999px;
+  padding: 15px 32px;
+  font-weight: 700;
+  font-size: .97rem;
+  letter-spacing: .01em;
+  transition: transform .25s ease, box-shadow .25s ease, background .25s ease, color .25s ease;
+  text-align: center;
+}
+
+.btn-primary {
+  color: #fff;
+  background: linear-gradient(135deg, var(--pink-400), var(--rose) 55%, #f7a8d6);
+  box-shadow: 0 14px 30px rgba(232, 111, 164, .38);
+}
+.btn-primary:hover { transform: translateY(-3px); box-shadow: 0 20px 40px rgba(232, 111, 164, .45); }
+
+.btn-ghost {
+  background: rgba(255, 255, 255, .78);
+  color: var(--rose-deep);
+  border: 1px solid var(--pink-200);
+  box-shadow: var(--shadow-sm);
+}
+.btn-ghost:hover { transform: translateY(-3px); background: #fff; }
+
+.btn-gold {
+  background: linear-gradient(135deg, #f2dcbb, var(--gold));
+  color: #6b4a23;
+  box-shadow: 0 12px 28px rgba(216, 178, 124, .38);
+}
+
+.btn-sm { padding: 10px 20px; font-size: .85rem; }
+.btn[disabled] { opacity: .45; cursor: not-allowed; transform: none !important; }
+
+/* ---------- Пушистый декор ---------- */
+.fluff {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(0.5px);
+  pointer-events: none;
+  opacity: .9;
+}
+
+.cloud {
+  position: absolute;
+  pointer-events: none;
+  opacity: .85;
+  animation: drift 26s ease-in-out infinite alternate;
+}
+.cloud svg { display: block; }
+.cloud--1 { top: 8%;  left: -4%;  width: 240px; animation-duration: 30s; }
+.cloud--2 { top: 22%; right: -3%; width: 300px; animation-duration: 38s; animation-direction: alternate-reverse; }
+.cloud--3 { bottom: 6%; left: 12%; width: 190px; animation-duration: 34s; opacity: .7; }
+
+@keyframes drift {
+  from { transform: translate3d(0, 0, 0); }
+  to   { transform: translate3d(40px, -18px, 0); }
+}
+
+.sparkle {
+  position: absolute;
+  width: 18px; height: 18px;
+  background: radial-gradient(circle, #fff 0 35%, transparent 36%),
+              conic-gradient(from 0deg, transparent 0 8%, rgba(255,255,255,.9) 12%, transparent 16%);
+  pointer-events: none;
+  animation: twinkle 3.4s ease-in-out infinite;
+}
+@keyframes twinkle {
+  0%, 100% { opacity: .25; transform: scale(.7) rotate(0deg); }
+  50%      { opacity: 1;   transform: scale(1.1) rotate(45deg); }
+}
+
+/* ---------- Шапка ---------- */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  backdrop-filter: blur(14px);
+  background: rgba(255, 250, 253, .72);
+  border-bottom: 1px solid rgba(255, 196, 223, .5);
+  transition: box-shadow .3s ease, background .3s ease;
+}
+.header.is-stuck { box-shadow: 0 10px 30px rgba(200, 130, 170, .14); background: rgba(255, 250, 253, .92); }
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding-block: 14px;
+}
+
+.logo {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  letter-spacing: .06em;
+}
+.logo > span:last-child { white-space: nowrap; }
+.logo b { font-weight: 600; }
+.logo span { color: var(--rose); }
+.logo-mark {
+  width: 42px; height: 42px;
+  display: grid; place-items: center;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--pink-200), var(--lilac-2));
+  box-shadow: inset 0 0 0 2px rgba(255,255,255,.75), var(--shadow-sm);
+  font-size: 1.1rem;
+}
+
+.demo-chip {
+  flex: 0 0 auto;
+  font-family: var(--font-body);
+  font-size: .62rem;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--rose-deep);
+  background: var(--pink-100);
+  border: 1px solid var(--pink-200);
+  border-radius: 999px;
+  padding: 3px 9px;
+  align-self: center;
+  margin-right: auto;
+}
+
+.nav { display: flex; align-items: center; gap: 26px; }
+.nav a {
+  font-size: .92rem;
+  white-space: nowrap;
+  font-weight: 600;
+  color: var(--ink);
+  opacity: .78;
+  position: relative;
+  padding-block: 4px;
+}
+.nav a::after {
+  content: "";
+  position: absolute; left: 0; bottom: 0;
+  width: 0; height: 2px; border-radius: 2px;
+  background: linear-gradient(90deg, var(--pink-400), var(--lilac-2));
+  transition: width .25s ease;
+}
+.nav a:hover { opacity: 1; }
+.nav a:hover::after { width: 100%; }
+
+.header-cta { display: flex; align-items: center; gap: 14px; }
+.header-phone { font-weight: 700; font-size: .95rem; white-space: nowrap; }
+
+.burger {
+  display: none;
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--pink-200);
+  background: #fff;
+  align-items: center; justify-content: center;
+  box-shadow: var(--shadow-sm);
+}
+.burger span { display: block; width: 18px; height: 2px; background: var(--rose); border-radius: 2px; position: relative; }
+.burger span::before, .burger span::after {
+  content: ""; position: absolute; left: 0; width: 18px; height: 2px; background: var(--rose); border-radius: 2px;
+}
+.burger span::before { top: -6px; }
+.burger span::after { top: 6px; }
+
+/* ---------- Hero ---------- */
+.hero {
+  position: relative;
+  padding-block: clamp(40px, 5vw, 72px) clamp(52px, 7vw, 104px);
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(700px 420px at 18% 22%, rgba(255, 196, 223, .55), transparent 65%),
+    radial-gradient(620px 420px at 82% 18%, rgba(217, 194, 247, .5), transparent 62%),
+    radial-gradient(800px 500px at 50% 110%, rgba(207, 230, 255, .55), transparent 60%);
+  pointer-events: none;
+}
+
+.hero-inner {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  gap: clamp(28px, 5vw, 64px);
+  align-items: center;
+}
+
+.hero-title span { color: var(--rose); font-style: italic; }
+.hero-text { max-width: 30em; color: var(--muted); font-size: 1.08rem; }
+
+.hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 30px; }
+
+.hero-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  margin-top: 42px;
+  padding-top: 28px;
+  border-top: 1px dashed var(--pink-300);
+}
+.hero-stat b {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 2.1rem;
+  color: var(--rose-deep);
+  line-height: 1;
+}
+.hero-stat span { font-size: .85rem; color: var(--muted); }
+
+/* Пушистая карточка-коллаж */
+.hero-art { position: relative; max-width: 470px; margin-left: auto; }
+.hero-card {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 6px solid rgba(255, 255, 255, .85);
+  transform: rotate(-1.4deg);
+  background: var(--pink-100);
+}
+.hero-card img { aspect-ratio: 4 / 4.1; object-fit: cover; max-height: 540px; }
+
+.hero-badge {
+  position: absolute;
+  background: rgba(255, 255, 255, .92);
+  border-radius: var(--radius-sm);
+  padding: 14px 18px;
+  box-shadow: var(--shadow);
+  font-size: .86rem;
+  display: flex; align-items: center; gap: 10px;
+  animation: float 6s ease-in-out infinite;
+}
+.hero-badge b { display: block; font-size: .95rem; }
+.hero-badge--1 { left: -22px; top: 16%; }
+.hero-badge--2 { right: -18px; bottom: 7%; animation-delay: 1.6s; }
+.hero-badge i { font-style: normal; font-size: 1.4rem; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-12px); }
+}
+
+/* Сахарная вата */
+.candy {
+  position: absolute;
+  width: 96px;
+  right: -10px;
+  top: -34px;
+  animation: float 7.5s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* ---------- Полоска-бегущая строка ---------- */
+.marquee {
+  overflow: hidden;
+  background: linear-gradient(90deg, var(--pink-200), var(--lilac), var(--sky-2), var(--pink-200));
+  border-block: 1px solid rgba(255,255,255,.6);
+  padding-block: 14px;
+}
+.marquee-track {
+  display: flex;
+  gap: 40px;
+  width: max-content;
+  animation: slide 30s linear infinite;
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--ink);
+  white-space: nowrap;
+}
+.marquee-track span { display: inline-flex; align-items: center; gap: 40px; }
+@keyframes slide { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+/* ---------- Карточки ---------- */
+.card {
+  background: rgba(255, 255, 255, .8);
+  border: 1px solid rgba(255, 220, 236, .9);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  backdrop-filter: blur(8px);
+}
+
+/* ---------- Преимущества ---------- */
+.perks {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.perk {
+  padding: 30px 26px;
+  border-radius: var(--radius);
+  background: linear-gradient(160deg, rgba(255,255,255,.95), rgba(255, 238, 246, .8));
+  border: 1px solid rgba(255, 214, 234, .9);
+  box-shadow: var(--shadow-sm);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.perk:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
+.perk i {
+  font-style: normal;
+  font-size: 1.8rem;
+  display: grid; place-items: center;
+  width: 58px; height: 58px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+  background: linear-gradient(140deg, var(--pink-200), var(--lilac));
+  box-shadow: inset 0 0 0 4px rgba(255,255,255,.7);
+}
+.perk h3 { font-size: 1.15rem; margin-bottom: 6px; }
+.perk p { margin: 0; font-size: .92rem; color: var(--muted); }
+
+/* ---------- Каталог услуг ---------- */
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 36px;
+}
+.tab {
+  border: 1px solid var(--pink-200);
+  background: rgba(255,255,255,.75);
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 11px 22px;
+  font-size: .9rem;
+  font-weight: 600;
+  transition: all .25s ease;
+}
+.tab:hover { border-color: var(--pink-400); transform: translateY(-2px); }
+.tab.is-active {
+  background: linear-gradient(135deg, var(--pink-400), var(--rose));
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 12px 26px rgba(232, 111, 164, .32);
+}
+
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 26px;
+}
+
+.service {
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid rgba(255, 220, 236, .9);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: transform .35s ease, box-shadow .35s ease;
+  animation: pop .45s ease backwards;
+}
+.service:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); }
+@keyframes pop { from { opacity: 0; transform: translateY(18px) scale(.98); } }
+
+.service-media { position: relative; overflow: hidden; }
+.service-media img { aspect-ratio: 4 / 3; object-fit: cover; transition: transform .6s ease; }
+.service:hover .service-media img { transform: scale(1.06); }
+.service-tag {
+  position: absolute; left: 14px; top: 14px;
+  background: rgba(255,255,255,.9);
+  color: var(--rose-deep);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: .74rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  box-shadow: var(--shadow-sm);
+}
+
+.service-body { padding: 22px 24px 24px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+.service-body h3 { margin: 0; font-size: 1.32rem; }
+.service-body p { margin: 0; color: var(--muted); font-size: .92rem; flex: 1; }
+.service-meta {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding-top: 12px; border-top: 1px dashed var(--pink-200);
+}
+.service-price { font-family: var(--font-display); font-size: 1.45rem; color: var(--rose-deep); }
+.service-price small { font-size: .72rem; color: var(--muted); font-family: var(--font-body); display: block; }
+
+/* ---------- Мастера ---------- */
+.masters { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.master { text-align: center; padding: 26px 20px 30px; border-radius: var(--radius); background: rgba(255,255,255,.85); border: 1px solid rgba(255, 220, 236, .9); box-shadow: var(--shadow-sm); transition: transform .3s ease; }
+.master:hover { transform: translateY(-6px); }
+.master-photo {
+  width: 120px; height: 120px; margin: 0 auto 16px;
+  border-radius: 50%; overflow: hidden;
+  border: 5px solid #fff;
+  box-shadow: var(--shadow);
+}
+.master-photo img { width: 100%; height: 100%; object-fit: cover; }
+.master h3 { margin-bottom: 2px; font-size: 1.28rem; }
+.master .role { font-size: .84rem; color: var(--rose); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.master p { font-size: .88rem; color: var(--muted); margin: 10px 0 0; }
+
+/* ---------- Галерея ---------- */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 180px;
+  gap: 16px;
+}
+.gallery figure { margin: 0; border-radius: var(--radius-sm); overflow: hidden; box-shadow: var(--shadow-sm); position: relative; }
+.gallery img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+.gallery figure:hover img { transform: scale(1.08); }
+.gallery .tall { grid-row: span 2; }
+.gallery .wide { grid-column: span 2; }
+
+/* ---------- Запись / календарь ---------- */
+.booking-wrap {
+  display: grid;
+  grid-template-columns: 1.15fr .85fr;
+  gap: 26px;
+  align-items: start;
+}
+
+.panel {
+  background: rgba(255,255,255,.88);
+  border: 1px solid rgba(255, 214, 234, .9);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: clamp(20px, 3vw, 32px);
+}
+
+.cal-head {
+  display: flex; align-items: center; justify-content: space-between; gap: 14px;
+  margin-bottom: 18px;
+}
+.cal-month { font-family: var(--font-display); font-size: 1.7rem; text-transform: capitalize; }
+.cal-nav { display: flex; gap: 8px; }
+.cal-nav button {
+  width: 42px; height: 42px; border-radius: 50%;
+  border: 1px solid var(--pink-200); background: #fff; color: var(--rose);
+  font-size: 1.1rem; line-height: 1;
+  box-shadow: var(--shadow-sm);
+  transition: all .25s ease;
+}
+.cal-nav button:hover:not([disabled]) { background: var(--pink-100); transform: translateY(-2px); }
+
+.cal-weekdays, .cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px; }
+.cal-weekdays {
+  margin-bottom: 8px;
+  font-size: .74rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted);
+  text-align: center;
+}
+
+.cal-day {
+  position: relative;
+  aspect-ratio: 1 / .92;
+  border-radius: var(--radius-xs);
+  border: 1px solid transparent;
+  background: var(--pink-50);
+  color: var(--ink);
+  font-weight: 700;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px;
+  transition: all .2s ease;
+}
+.cal-day small { font-size: .62rem; font-weight: 600; color: var(--muted); }
+.cal-day:hover:not([disabled]) { background: var(--pink-200); transform: translateY(-2px); }
+.cal-day[disabled] { opacity: .32; background: transparent; }
+.cal-day.is-empty { background: transparent; border: none; pointer-events: none; }
+.cal-day.is-busy { background: var(--pink-100); }
+.cal-day.is-today { box-shadow: inset 0 0 0 2px var(--lilac-2); }
+.cal-day.is-selected {
+  background: linear-gradient(140deg, var(--pink-400), var(--rose));
+  color: #fff;
+  box-shadow: 0 12px 24px rgba(232, 111, 164, .35);
+}
+.cal-day.is-selected small { color: rgba(255,255,255,.85); }
+.cal-day .dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--rose);
+  position: absolute; bottom: 8px;
+}
+.cal-day.is-selected .dot { background: #fff; }
+
+.legend { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 20px; font-size: .8rem; color: var(--muted); }
+.legend i { width: 14px; height: 14px; border-radius: 5px; display: inline-block; margin-right: 6px; vertical-align: -2px; }
+.legend .free  { background: var(--pink-50); box-shadow: inset 0 0 0 1px var(--pink-200); }
+.legend .taken { background: var(--pink-200); }
+.legend .mine  { background: linear-gradient(140deg, var(--pink-400), var(--rose)); }
+
+.slots-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; flex-wrap: wrap; margin-bottom: 6px; }
+.slots-date { font-family: var(--font-display); font-size: 1.45rem; }
+.slots-hint { font-size: .84rem; color: var(--muted); margin: 0 0 18px; }
+
+.slots {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(92px, 1fr));
+  gap: 10px;
+}
+.slot {
+  border-radius: var(--radius-xs);
+  border: 1px solid var(--pink-200);
+  background: #fff;
+  padding: 12px 8px;
+  font-weight: 700;
+  font-size: .95rem;
+  color: var(--ink);
+  transition: all .22s ease;
+  animation: pop .3s ease backwards;
+}
+.slot:hover:not([disabled]) {
+  border-color: transparent;
+  background: linear-gradient(140deg, var(--pink-300), var(--pink-400));
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 22px rgba(232, 111, 164, .3);
+}
+.slot small { display: block; font-size: .66rem; font-weight: 600; color: var(--muted); }
+.slot:hover:not([disabled]) small { color: rgba(255,255,255,.9); }
+.slot.is-taken { background: var(--pink-100); color: var(--muted); border-style: dashed; cursor: not-allowed; }
+.slot.is-mine {
+  background: linear-gradient(140deg, var(--pink-400), var(--rose));
+  color: #fff; border-color: transparent;
+  box-shadow: 0 10px 22px rgba(232, 111, 164, .3);
+}
+.slot.is-mine small { color: rgba(255,255,255,.9); }
+.slot[disabled] { cursor: not-allowed; }
+
+.slots-empty {
+  text-align: center;
+  color: var(--muted);
+  padding: 30px 10px;
+  font-size: .95rem;
+}
+
+/* Мои записи */
+.mybookings { margin-top: 26px; }
+.mybookings h3 { font-size: 1.2rem; }
+.booking-item {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 14px 16px;
+  border-radius: var(--radius-xs);
+  background: linear-gradient(140deg, rgba(255,238,246,.9), rgba(239,227,255,.75));
+  border: 1px solid rgba(255, 214, 234, .9);
+  margin-bottom: 10px;
+  font-size: .9rem;
+}
+.booking-item b { display: block; font-size: .96rem; }
+.booking-item span { color: var(--muted); font-size: .82rem; }
+.booking-item button {
+  border: 0; background: transparent; color: var(--rose-deep);
+  font-size: .82rem; font-weight: 700; text-decoration: underline; padding: 4px;
+}
+.empty-note { color: var(--muted); font-size: .88rem; margin: 0; }
+
+.tg-note {
+  margin-top: 22px;
+  padding: 16px 18px;
+  border-radius: var(--radius-xs);
+  background: linear-gradient(135deg, rgba(207,230,255,.6), rgba(255,238,246,.7));
+  border: 1px dashed var(--sky-2);
+  font-size: .85rem;
+  color: var(--ink);
+}
+.tg-note b { color: var(--rose-deep); }
+
+/* ---------- Модалка ---------- */
+.modal {
+  position: fixed; inset: 0; z-index: 120;
+  display: grid; place-items: center;
+  padding: 20px;
+  background: rgba(88, 48, 66, .35);
+  backdrop-filter: blur(6px);
+  animation: fade .25s ease;
+}
+@keyframes fade { from { opacity: 0; } }
+
+.modal-card {
+  width: min(520px, 100%);
+  max-height: 92vh;
+  overflow-y: auto;
+  background: linear-gradient(170deg, #fff, var(--pink-50));
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(255, 214, 234, .9);
+  padding: clamp(22px, 4vw, 34px);
+  position: relative;
+  animation: rise .35s cubic-bezier(.2,.8,.3,1);
+}
+@keyframes rise { from { opacity: 0; transform: translateY(22px) scale(.97); } }
+
+.modal-close {
+  position: absolute; right: 16px; top: 16px;
+  width: 38px; height: 38px; border-radius: 50%;
+  border: 1px solid var(--pink-200); background: #fff; color: var(--rose);
+  font-size: 1.1rem; line-height: 1;
+}
+
+.modal-card h3 { margin-bottom: 4px; }
+.modal-sub { color: var(--muted); font-size: .9rem; margin: 0 0 22px; }
+
+.field { margin-bottom: 16px; }
+.field label { display: block; font-size: .82rem; font-weight: 700; margin-bottom: 7px; color: var(--ink); }
+.field input, .field select, .field textarea {
+  width: 100%;
+  border-radius: var(--radius-xs);
+  border: 1px solid var(--pink-200);
+  background: #fff;
+  padding: 13px 16px;
+  font: inherit;
+  font-size: .95rem;
+  color: var(--ink);
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+.field textarea { min-height: 84px; resize: vertical; }
+.field input:focus, .field select:focus, .field textarea:focus {
+  outline: none;
+  border-color: var(--pink-400);
+  box-shadow: 0 0 0 4px rgba(255, 159, 201, .22);
+}
+.field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+
+.summary {
+  display: flex; flex-wrap: wrap; gap: 10px;
+  margin-bottom: 20px;
+}
+.chip {
+  border-radius: 999px;
+  background: rgba(255,255,255,.9);
+  border: 1px solid var(--pink-200);
+  padding: 8px 16px;
+  font-size: .84rem;
+  font-weight: 700;
+  color: var(--rose-deep);
+}
+
+.form-note { font-size: .74rem; color: var(--muted); margin: 14px 0 0; text-align: center; }
+
+.success { text-align: center; }
+.success .emoji { font-size: 3rem; display: block; margin-bottom: 10px; animation: float 3s ease-in-out infinite; }
+
+/* ---------- Отзывы ---------- */
+.reviews { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.review {
+  padding: 28px 26px;
+  border-radius: var(--radius);
+  background: rgba(255,255,255,.88);
+  border: 1px solid rgba(255, 220, 236, .9);
+  box-shadow: var(--shadow-sm);
+}
+.review .stars { color: var(--gold); letter-spacing: .12em; margin-bottom: 10px; }
+.review p { font-size: .94rem; color: var(--ink); opacity: .85; margin: 0 0 16px; font-style: italic; }
+.review footer { display: flex; align-items: center; gap: 12px; }
+.review .ava {
+  width: 44px; height: 44px; border-radius: 50%;
+  display: grid; place-items: center;
+  background: linear-gradient(140deg, var(--pink-200), var(--lilac-2));
+  font-weight: 800; color: #fff;
+}
+.review b { font-size: .92rem; }
+.review small { display: block; color: var(--muted); font-size: .78rem; }
+
+/* ---------- Контакты ---------- */
+.contacts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; align-items: stretch; }
+.contact-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 18px; }
+.contact-list li { display: flex; gap: 14px; align-items: flex-start; }
+.contact-list i {
+  font-style: normal; font-size: 1.2rem;
+  width: 46px; height: 46px; flex: 0 0 46px;
+  border-radius: 50%; display: grid; place-items: center;
+  background: linear-gradient(140deg, var(--pink-200), var(--lilac));
+  box-shadow: inset 0 0 0 4px rgba(255,255,255,.7);
+}
+.contact-list b { display: block; font-size: .96rem; }
+.contact-list span { color: var(--muted); font-size: .9rem; }
+
+.map-card {
+  border-radius: var(--radius);
+  overflow: hidden;
+  min-height: 320px;
+  border: 1px solid rgba(255, 214, 234, .9);
+  box-shadow: var(--shadow);
+  background:
+    radial-gradient(400px 220px at 30% 30%, rgba(255,255,255,.9), transparent 70%),
+    linear-gradient(160deg, var(--sky), var(--pink-100) 60%, var(--lilac));
+  display: grid; place-items: center; text-align: center;
+  padding: 30px;
+}
+.map-card .pin { font-size: 2.6rem; animation: float 4s ease-in-out infinite; }
+
+/* ---------- CTA ---------- */
+.cta {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  padding: clamp(40px, 6vw, 72px);
+  text-align: center;
+  background: linear-gradient(140deg, var(--pink-200), var(--lilac) 50%, var(--sky-2));
+  box-shadow: var(--shadow-lg);
+  border: 6px solid rgba(255,255,255,.7);
+}
+.cta h2 { margin-bottom: 12px; }
+.cta p { color: var(--ink); opacity: .75; max-width: 40em; margin: 0 auto 26px; }
+
+/* ---------- Подвал ---------- */
+.footer {
+  margin-top: clamp(40px, 6vw, 80px);
+  padding-block: 46px 30px;
+  background: linear-gradient(180deg, rgba(255,238,246,.6), rgba(255,255,255,.9));
+  border-top: 1px solid rgba(255, 214, 234, .9);
+}
+.footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 30px; }
+.footer p { color: var(--muted); font-size: .9rem; }
+.footer h4 { font-family: var(--font-display); font-size: 1.15rem; margin: 0 0 12px; font-weight: 600; }
+.footer ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; font-size: .9rem; color: var(--muted); }
+.footer-bottom {
+  margin-top: 34px; padding-top: 18px;
+  border-top: 1px dashed var(--pink-200);
+  display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between;
+  font-size: .8rem; color: var(--muted);
+}
+
+/* ---------- Тост ---------- */
+.toast {
+  position: fixed;
+  left: 50%; bottom: 28px;
+  transform: translateX(-50%) translateY(200%);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 200;
+  background: linear-gradient(135deg, var(--pink-400), var(--rose));
+  color: #fff;
+  padding: 14px 26px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: .92rem;
+  box-shadow: 0 18px 40px rgba(232, 111, 164, .45);
+  transition: transform .45s cubic-bezier(.2,.8,.3,1), opacity .3s ease, visibility .3s;
+  max-width: calc(100% - 40px);
+  text-align: center;
+}
+.toast.is-visible { transform: translateX(-50%) translateY(0); opacity: 1; visibility: visible; }
+
+/* ---------- Появление при скролле ---------- */
+.reveal { opacity: 0; transform: translateY(26px); transition: opacity .7s ease, transform .7s ease; }
+.reveal.is-in { opacity: 1; transform: none; }
+
+/* ---------- Адаптив ---------- */
+@media (max-width: 1024px) {
+  .perks { grid-template-columns: repeat(2, 1fr); }
+  .masters { grid-template-columns: repeat(2, 1fr); }
+  .reviews { grid-template-columns: 1fr; }
+  .booking-wrap { grid-template-columns: 1fr; }
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero-art { max-width: 460px; margin-inline: auto; }
+  .gallery { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 860px) {
+  .nav { display: none; }
+  .burger { display: flex; }
+  .header-phone { display: none; }
+  .nav.is-open a { white-space: normal; }
+  .nav.is-open {
+    display: flex;
+    position: absolute; left: 16px; right: 16px; top: 74px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    background: rgba(255, 250, 253, .98);
+    border: 1px solid var(--pink-200);
+    border-radius: var(--radius);
+    padding: 22px 24px;
+    box-shadow: var(--shadow);
+  }
+  .contacts-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 620px) {
+  .logo { font-size: 1.22rem; }
+  .header-cta .btn { display: none; }        /* кнопка «Записаться» живёт в меню и в первом экране */
+  .logo-mark { width: 36px; height: 36px; font-size: .95rem; }
+  .cloud--2 { display: none; }
+  .perks { grid-template-columns: 1fr; }
+  .masters { grid-template-columns: 1fr 1fr; }
+  .field-row { grid-template-columns: 1fr; }
+  .hero-badge--1 { left: -8px; }
+  .hero-badge--2 { right: -6px; }
+  .cal-day { font-size: .85rem; }
+  .cal-day small { display: none; }
+  .gallery { grid-auto-rows: 140px; }
+  .btn { padding: 14px 24px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+  html { scroll-behavior: auto; }
+}
+
+</style>
+</head>
+<body>
+
+<!-- ======================= Шапка ======================= -->
+<header class="header" id="header">
+  <div class="container header-inner">
+    <a class="logo" href="#top">
+      <span class="logo-mark">🎀</span>
+      <span><b>1618</b> <span>Avenue</span></span>
+    </a>
+    <span class="demo-chip">демо</span>
+
+    <nav class="nav" id="nav">
+      <a href="#about">О салоне</a>
+      <a href="#services">Услуги</a>
+      <a href="#masters">Мастера</a>
+      <a href="#gallery">Галерея</a>
+      <a href="#booking">Запись</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+
+    <div class="header-cta">
+      <a class="header-phone" href="tel:+79162041532">+7 916 204-15-32</a>
+      <a class="btn btn-primary btn-sm" href="#booking">Записаться</a>
+      <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ======================= Hero ======================= -->
+<section class="hero" id="top">
+  <div class="cloud cloud--1">
+    <svg viewBox="0 0 220 120"><ellipse cx="70" cy="80" rx="62" ry="36" fill="#fff"/><ellipse cx="120" cy="60" rx="52" ry="42" fill="#fff"/><ellipse cx="165" cy="84" rx="46" ry="30" fill="#fff"/></svg>
+  </div>
+  <div class="cloud cloud--2">
+    <svg viewBox="0 0 220 120"><ellipse cx="70" cy="80" rx="62" ry="36" fill="#fff"/><ellipse cx="120" cy="58" rx="54" ry="44" fill="#fff"/><ellipse cx="168" cy="84" rx="44" ry="28" fill="#fff"/></svg>
+  </div>
+  <div class="cloud cloud--3">
+    <svg viewBox="0 0 220 120"><ellipse cx="80" cy="78" rx="60" ry="34" fill="#fff"/><ellipse cx="130" cy="60" rx="48" ry="40" fill="#fff"/></svg>
+  </div>
+
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <span class="eyebrow">✨ Большая Грузинская, 20 · Москва</span>
+      <h1 class="hero-title">Красота, <span>нежная как сладкая вата</span></h1>
+      <p class="hero-text">
+        1618 Avenue — камерный салон, где вас встречают по имени, наливают ягодный чай
+        и делают ту самую красоту, ради которой хочется возвращаться. Мягкий свет, розовые облака
+        и мастера, которые слышат с полуслова.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#booking">Выбрать время 🩷</a>
+        <a class="btn btn-ghost" href="#services">Смотреть услуги</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat"><b>8&nbsp;лет</b><span>дарим настроение</span></div>
+        <div class="hero-stat"><b>4.9★</b><span>средняя оценка гостей</span></div>
+        <div class="hero-stat"><b>12&nbsp;000+</b><span>счастливых визитов</span></div>
+      </div>
+    </div>
+
+    <div class="hero-art">
+      <div class="candy">
+        <svg viewBox="0 0 120 170">
+          <defs><radialGradient id="cc" cx="40%" cy="35%"><stop offset="0%" stop-color="#fff"/><stop offset="60%" stop-color="#ffc4df"/><stop offset="100%" stop-color="#ff9fc9"/></radialGradient></defs>
+          <rect x="55" y="70" width="10" height="92" rx="5" fill="#f3dcc6"/>
+          <circle cx="60" cy="58" r="48" fill="url(#cc)"/>
+          <circle cx="30" cy="72" r="26" fill="#ffd9ec"/>
+          <circle cx="92" cy="70" r="24" fill="#f6dcff"/>
+          <circle cx="60" cy="30" r="24" fill="#fff0f7"/>
+        </svg>
+      </div>
+
+      <div class="hero-card">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAwIDExNTAiIHdpZHRoPSIxMDAwIiBoZWlnaHQ9IjExNTAiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0i0KTQvtGC0L4g0LTQu9GPINC/0LXRgNCy0L7Qs9C+INGN0LrRgNCw0L3QsCI+CiAgPHJlY3Qgd2lkdGg9IjEwMDAiIGhlaWdodD0iMTE1MCIgZmlsbD0iI2ZkZjZmYSIvPgogIDxyZWN0IHg9IjEwIiB5PSIxMCIgd2lkdGg9Ijk4MCIgaGVpZ2h0PSIxMTMwIiByeD0iMTgiIGZpbGw9Im5vbmUiCiAgICAgICAgc3Ryb2tlPSIjZTZjOGRhIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1kYXNoYXJyYXk9IjE0IDEyIi8+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTAwLDQ4NykiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2RjYjNjYiIgc3Ryb2tlLXdpZHRoPSI5LjYiCiAgICAgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIj4KICAgIDxyZWN0IHg9Ii0xNjAiIHk9Ii0xMTUiIHdpZHRoPSIzMjAiIGhlaWdodD0iMjMwIiByeD0iMjkiLz4KICAgIDxjaXJjbGUgY3g9Ii03MiIgY3k9Ii0zNSIgcj0iMzIiLz4KICAgIDxwYXRoIGQ9Ik0gLTE0NCA5NiBMIC0xNiAtMTYgTCA3MiA1MSBMIDEyOCA4IEwgMTUyIDk2IFoiLz4KICA8L2c+CiAgPHRleHQgeD0iNTAwIiB5PSI3MjciIHRleHQtYW5jaG9yPSJtaWRkbGUiCiAgICAgICAgZm9udC1mYW1pbHk9Ik51bml0bywgU2Vnb2UgVUksIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjU1IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjYjk4YWE0Ij7QpNC+0YLQviDQtNC70Y8g0L/QtdGA0LLQvtCz0L4g0Y3QutGA0LDQvdCwPC90ZXh0PgogIDx0ZXh0IHg9IjUwMCIgeT0iODEwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIgogICAgICAgIGZvbnQtZmFtaWx5PSJOdW5pdG8sIFNlZ29lIFVJLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIzNCIgZmlsbD0iI2M5YTZiOCI+0LLQtdGA0YLQuNC60LDQu9GM0L3QvtC1IMK3IDEwMDDDlzExNTA8L3RleHQ+Cjwvc3ZnPg==" alt="Фото салона 1618 Avenue" width="1000" height="1150">
+      </div>
+
+      <div class="hero-badge hero-badge--1">
+        <i>☁️</i><span><b>Уютно и тихо</b>только одна гостья в зоне</span>
+      </div>
+      <div class="hero-badge hero-badge--2">
+        <i>🍭</i><span><b>Чай и сладости</b>в подарок к каждому визиту</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= Бегущая строка ======================= -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Маникюр&nbsp;·&nbsp;Ресницы&nbsp;·&nbsp;Брови&nbsp;·&nbsp;Волосы&nbsp;·&nbsp;Уходы&nbsp;·&nbsp;Макияж&nbsp;·&nbsp;Педикюр&nbsp;·&nbsp;Эпиляция&nbsp;·</span>
+    <span>Маникюр&nbsp;·&nbsp;Ресницы&nbsp;·&nbsp;Брови&nbsp;·&nbsp;Волосы&nbsp;·&nbsp;Уходы&nbsp;·&nbsp;Макияж&nbsp;·&nbsp;Педикюр&nbsp;·&nbsp;Эпиляция&nbsp;·</span>
+  </div>
+</div>
+
+<!-- ======================= О салоне ======================= -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">О салоне</span>
+      <h2>Место, где хочется задержаться подольше</h2>
+      <p class="lead">
+        Мы придумали 1618 Avenue как маленькое облако в центре города: приглушённая музыка,
+        зефирные кресла, ароматы ванили и малины. Здесь не торопят, не продают лишнего
+        и делают красиво — так, чтобы держалось долго.
+      </p>
+    </div>
+
+    <div class="perks">
+      <article class="perk reveal"><i>🕊️</i><h3>Только ваш мастер</h3><p>Один гость — одно время. Никакой спешки и очередей в коридоре.</p></article>
+      <article class="perk reveal"><i>🧁</i><h3>Премиальные материалы</h3><p>Гипоаллергенные покрытия, уходы люкс-сегмента и стерильность по протоколу.</p></article>
+      <article class="perk reveal"><i>🎀</i><h3>Индивидуальный подбор</h3><p>Форма, оттенок и уход — под вашу внешность и образ жизни, а не под тренд.</p></article>
+      <article class="perk reveal"><i>☁️</i><h3>Онлайн-запись 24/7</h3><p>Выбираете свободный час в календаре — заявка сразу улетает администратору.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= Каталог услуг ======================= -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Каталог</span>
+      <h2>Услуги и цены</h2>
+      <p class="lead">Выберите услугу — и мы сразу откроем календарь со свободными часами.</p>
+    </div>
+
+    <div class="tabs" id="tabs" role="tablist"></div>
+    <div class="catalog" id="catalog"></div>
+  </div>
+</section>
+
+<!-- ======================= Запись ======================= -->
+<section class="section" id="booking">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Онлайн-запись</span>
+      <h2>Выберите день и свободный час</h2>
+      <p class="lead">
+        Нажмите на дату в календаре — ниже появятся часовые ячейки. Свободную ячейку можно занять
+        за минуту: заявка уходит администратору в Telegram.
+      </p>
+    </div>
+
+    <div class="booking-wrap">
+      <!-- Календарь -->
+      <div class="panel reveal">
+        <div class="cal-head">
+          <div class="cal-month" id="calMonth">—</div>
+          <div class="cal-nav">
+            <button type="button" id="calPrev" aria-label="Предыдущий месяц">‹</button>
+            <button type="button" id="calNext" aria-label="Следующий месяц">›</button>
+          </div>
+        </div>
+
+        <div class="cal-weekdays" aria-hidden="true">
+          <div>пн</div><div>вт</div><div>ср</div><div>чт</div><div>пт</div><div>сб</div><div>вс</div>
+        </div>
+        <div class="cal-grid" id="calGrid"></div>
+
+        <div class="legend">
+          <span><i class="free"></i>есть свободные часы</span>
+          <span><i class="taken"></i>почти всё занято</span>
+          <span><i class="mine"></i>выбранный день</span>
+        </div>
+
+        <div class="tg-note">
+          <b>Демо-режим.</b> Записи сохраняются в этом браузере, чтобы показать логику.
+          В боевой версии каждая заявка мгновенно уходит менеджеру в Telegram-бота
+          и попадает в общий журнал салона.
+        </div>
+      </div>
+
+      <!-- Слоты -->
+      <div class="panel reveal">
+        <div class="slots-head">
+          <div class="slots-date" id="slotsDate">Выберите дату</div>
+          <div class="chip" id="slotsCount">—</div>
+        </div>
+        <p class="slots-hint" id="slotsHint">Салон работает ежедневно с 10:00 до 21:00.</p>
+
+        <div class="slots" id="slots"></div>
+
+        <div class="mybookings">
+          <h3>Мои записи</h3>
+          <div id="myBookings"><p class="empty-note">Пока пусто — самое время выбрать время 🩷</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= Мастера ======================= -->
+<section class="section" id="masters">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Команда</span>
+      <h2>Наши мастера</h2>
+      <p class="lead">Каждая из девушек — с профильным образованием и постоянным обучением.</p>
+    </div>
+    <div class="masters" id="mastersGrid"></div>
+  </div>
+</section>
+
+<!-- ======================= Галерея ======================= -->
+<section class="section" id="gallery">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Галерея</span>
+      <h2>Атмосфера и работы</h2>
+      <p class="lead">Немного розового настроения из наших будней.</p>
+    </div>
+
+    <div class="gallery reveal">
+      <figure class="tall"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgMTIwMCIgd2lkdGg9IjgwMCIgaGVpZ2h0PSIxMjAwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9ItCk0L7RgtC+INC00LvRjyDQs9Cw0LvQtdGA0LXQuCAxIj4KICA8cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjEyMDAiIGZpbGw9IiNmZGY2ZmEiLz4KICA8cmVjdCB4PSIxMCIgeT0iMTAiIHdpZHRoPSI3ODAiIGhlaWdodD0iMTE4MCIgcng9IjE4IiBmaWxsPSJub25lIgogICAgICAgIHN0cm9rZT0iI2U2YzhkYSIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtZGFzaGFycmF5PSIxNCAxMiIvPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQwMCw1MzApIiBmaWxsPSJub25lIiBzdHJva2U9IiNkY2IzY2IiIHN0cm9rZS13aWR0aD0iNy43IgogICAgIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCI+CiAgICA8cmVjdCB4PSItMTI4IiB5PSItOTIiIHdpZHRoPSIyNTYiIGhlaWdodD0iMTg0IiByeD0iMjMiLz4KICAgIDxjaXJjbGUgY3g9Ii01OCIgY3k9Ii0yOCIgcj0iMjYiLz4KICAgIDxwYXRoIGQ9Ik0gLTExNSA3NyBMIC0xMyAtMTMgTCA1OCA0MSBMIDEwMiA2IEwgMTIyIDc3IFoiLz4KICA8L2c+CiAgPHRleHQgeD0iNDAwIiB5PSI3MjIiIHRleHQtYW5jaG9yPSJtaWRkbGUiCiAgICAgICAgZm9udC1mYW1pbHk9Ik51bml0bywgU2Vnb2UgVUksIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjQ0IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjYjk4YWE0Ij7QpNC+0YLQviDQtNC70Y8g0LPQsNC70LXRgNC10LggMTwvdGV4dD4KICA8dGV4dCB4PSI0MDAiIHk9Ijc4OCIgdGV4dC1hbmNob3I9Im1pZGRsZSIKICAgICAgICBmb250LWZhbWlseT0iTnVuaXRvLCBTZWdvZSBVSSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjciIGZpbGw9IiNjOWE2YjgiPjgwMMOXMTIwMDwvdGV4dD4KPC9zdmc+" alt="Маникюр в 1618 Avenue" loading="lazy"></figure>
+      <figure><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgODAwIiB3aWR0aD0iOTAwIiBoZWlnaHQ9IjgwMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSLQpNC+0YLQviDQtNC70Y8g0LPQsNC70LXRgNC10LggMiI+CiAgPHJlY3Qgd2lkdGg9IjkwMCIgaGVpZ2h0PSI4MDAiIGZpbGw9IiNmZGY2ZmEiLz4KICA8cmVjdCB4PSIxMCIgeT0iMTAiIHdpZHRoPSI4ODAiIGhlaWdodD0iNzgwIiByeD0iMTgiIGZpbGw9Im5vbmUiCiAgICAgICAgc3Ryb2tlPSIjZTZjOGRhIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1kYXNoYXJyYXk9IjE0IDEyIi8+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDUwLDMzMCkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2RjYjNjYiIgc3Ryb2tlLXdpZHRoPSI3LjciCiAgICAgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIj4KICAgIDxyZWN0IHg9Ii0xMjgiIHk9Ii05MiIgd2lkdGg9IjI1NiIgaGVpZ2h0PSIxODQiIHJ4PSIyMyIvPgogICAgPGNpcmNsZSBjeD0iLTU4IiBjeT0iLTI4IiByPSIyNiIvPgogICAgPHBhdGggZD0iTSAtMTE1IDc3IEwgLTEzIC0xMyBMIDU4IDQxIEwgMTAyIDYgTCAxMjIgNzcgWiIvPgogIDwvZz4KICA8dGV4dCB4PSI0NTAiIHk9IjUyMiIgdGV4dC1hbmNob3I9Im1pZGRsZSIKICAgICAgICBmb250LWZhbWlseT0iTnVuaXRvLCBTZWdvZSBVSSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iNDQiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNiOThhYTQiPtCk0L7RgtC+INC00LvRjyDQs9Cw0LvQtdGA0LXQuCAyPC90ZXh0PgogIDx0ZXh0IHg9IjQ1MCIgeT0iNTg4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIgogICAgICAgIGZvbnQtZmFtaWx5PSJOdW5pdG8sIFNlZ29lIFVJLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNyIgZmlsbD0iI2M5YTZiOCI+OTAww5c4MDA8L3RleHQ+Cjwvc3ZnPg==" alt="Наращивание ресниц" loading="lazy"></figure>
+      <figure class="wide"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDAwIDcwMCIgd2lkdGg9IjE0MDAiIGhlaWdodD0iNzAwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9ItCk0L7RgtC+INC00LvRjyDQs9Cw0LvQtdGA0LXQuCAzIj4KICA8cmVjdCB3aWR0aD0iMTQwMCIgaGVpZ2h0PSI3MDAiIGZpbGw9IiNmZGY2ZmEiLz4KICA8cmVjdCB4PSIxMCIgeT0iMTAiIHdpZHRoPSIxMzgwIiBoZWlnaHQ9IjY4MCIgcng9IjE4IiBmaWxsPSJub25lIgogICAgICAgIHN0cm9rZT0iI2U2YzhkYSIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtZGFzaGFycmF5PSIxNCAxMiIvPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDcwMCwyODgpIiBmaWxsPSJub25lIiBzdHJva2U9IiNkY2IzY2IiIHN0cm9rZS13aWR0aD0iNi43IgogICAgIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCI+CiAgICA8cmVjdCB4PSItMTEyIiB5PSItODEiIHdpZHRoPSIyMjQiIGhlaWdodD0iMTYxIiByeD0iMjAiLz4KICAgIDxjaXJjbGUgY3g9Ii01MCIgY3k9Ii0yNSIgcj0iMjIiLz4KICAgIDxwYXRoIGQ9Ik0gLTEwMSA2NyBMIC0xMSAtMTEgTCA1MCAzNiBMIDkwIDYgTCAxMDYgNjcgWiIvPgogIDwvZz4KICA8dGV4dCB4PSI3MDAiIHk9IjQ1NiIgdGV4dC1hbmNob3I9Im1pZGRsZSIKICAgICAgICBmb250LWZhbWlseT0iTnVuaXRvLCBTZWdvZSBVSSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMzgiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNiOThhYTQiPtCk0L7RgtC+INC00LvRjyDQs9Cw0LvQtdGA0LXQuCAzPC90ZXh0PgogIDx0ZXh0IHg9IjcwMCIgeT0iNTE0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIgogICAgICAgIGZvbnQtZmFtaWx5PSJOdW5pdG8sIFNlZ29lIFVJLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZmlsbD0iI2M5YTZiOCI+MTQwMMOXNzAwPC90ZXh0Pgo8L3N2Zz4=" alt="Интерьер салона" loading="lazy"></figure>
+      <figure><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgODAwIiB3aWR0aD0iOTAwIiBoZWlnaHQ9IjgwMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSLQpNC+0YLQviDQtNC70Y8g0LPQsNC70LXRgNC10LggNCI+CiAgPHJlY3Qgd2lkdGg9IjkwMCIgaGVpZ2h0PSI4MDAiIGZpbGw9IiNmZGY2ZmEiLz4KICA8cmVjdCB4PSIxMCIgeT0iMTAiIHdpZHRoPSI4ODAiIGhlaWdodD0iNzgwIiByeD0iMTgiIGZpbGw9Im5vbmUiCiAgICAgICAgc3Ryb2tlPSIjZTZjOGRhIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1kYXNoYXJyYXk9IjE0IDEyIi8+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDUwLDMzMCkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2RjYjNjYiIgc3Ryb2tlLXdpZHRoPSI3LjciCiAgICAgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIj4KICAgIDxyZWN0IHg9Ii0xMjgiIHk9Ii05MiIgd2lkdGg9IjI1NiIgaGVpZ2h0PSIxODQiIHJ4PSIyMyIvPgogICAgPGNpcmNsZSBjeD0iLTU4IiBjeT0iLTI4IiByPSIyNiIvPgogICAgPHBhdGggZD0iTSAtMTE1IDc3IEwgLTEzIC0xMyBMIDU4IDQxIEwgMTAyIDYgTCAxMjIgNzcgWiIvPgogIDwvZz4KICA8dGV4dCB4PSI0NTAiIHk9IjUyMiIgdGV4dC1hbmNob3I9Im1pZGRsZSIKICAgICAgICBmb250LWZhbWlseT0iTnVuaXRvLCBTZWdvZSBVSSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iNDQiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNiOThhYTQiPtCk0L7RgtC+INC00LvRjyDQs9Cw0LvQtdGA0LXQuCA0PC90ZXh0PgogIDx0ZXh0IHg9IjQ1MCIgeT0iNTg4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIgogICAgICAgIGZvbnQtZmFtaWx5PSJOdW5pdG8sIFNlZ29lIFVJLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNyIgZmlsbD0iI2M5YTZiOCI+OTAww5c4MDA8L3RleHQ+Cjwvc3ZnPg==" alt="Оформление бровей" loading="lazy"></figure>
+      <figure class="wide"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDAwIDcwMCIgd2lkdGg9IjE0MDAiIGhlaWdodD0iNzAwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9ItCk0L7RgtC+INC00LvRjyDQs9Cw0LvQtdGA0LXQuCA1Ij4KICA8cmVjdCB3aWR0aD0iMTQwMCIgaGVpZ2h0PSI3MDAiIGZpbGw9IiNmZGY2ZmEiLz4KICA8cmVjdCB4PSIxMCIgeT0iMTAiIHdpZHRoPSIxMzgwIiBoZWlnaHQ9IjY4MCIgcng9IjE4IiBmaWxsPSJub25lIgogICAgICAgIHN0cm9rZT0iI2U2YzhkYSIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtZGFzaGFycmF5PSIxNCAxMiIvPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDcwMCwyODgpIiBmaWxsPSJub25lIiBzdHJva2U9IiNkY2IzY2IiIHN0cm9rZS13aWR0aD0iNi43IgogICAgIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCI+CiAgICA8cmVjdCB4PSItMTEyIiB5PSItODEiIHdpZHRoPSIyMjQiIGhlaWdodD0iMTYxIiByeD0iMjAiLz4KICAgIDxjaXJjbGUgY3g9Ii01MCIgY3k9Ii0yNSIgcj0iMjIiLz4KICAgIDxwYXRoIGQ9Ik0gLTEwMSA2NyBMIC0xMSAtMTEgTCA1MCAzNiBMIDkwIDYgTCAxMDYgNjcgWiIvPgogIDwvZz4KICA8dGV4dCB4PSI3MDAiIHk9IjQ1NiIgdGV4dC1hbmNob3I9Im1pZGRsZSIKICAgICAgICBmb250LWZhbWlseT0iTnVuaXRvLCBTZWdvZSBVSSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMzgiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNiOThhYTQiPtCk0L7RgtC+INC00LvRjyDQs9Cw0LvQtdGA0LXQuCA1PC90ZXh0PgogIDx0ZXh0IHg9IjcwMCIgeT0iNTE0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIgogICAgICAgIGZvbnQtZmFtaWx5PSJOdW5pdG8sIFNlZ29lIFVJLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZmlsbD0iI2M5YTZiOCI+MTQwMMOXNzAwPC90ZXh0Pgo8L3N2Zz4=" alt="Зона ожидания" loading="lazy"></figure>
+      <figure><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgODAwIiB3aWR0aD0iOTAwIiBoZWlnaHQ9IjgwMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSLQpNC+0YLQviDQtNC70Y8g0LPQsNC70LXRgNC10LggNiI+CiAgPHJlY3Qgd2lkdGg9IjkwMCIgaGVpZ2h0PSI4MDAiIGZpbGw9IiNmZGY2ZmEiLz4KICA8cmVjdCB4PSIxMCIgeT0iMTAiIHdpZHRoPSI4ODAiIGhlaWdodD0iNzgwIiByeD0iMTgiIGZpbGw9Im5vbmUiCiAgICAgICAgc3Ryb2tlPSIjZTZjOGRhIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1kYXNoYXJyYXk9IjE0IDEyIi8+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDUwLDMzMCkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2RjYjNjYiIgc3Ryb2tlLXdpZHRoPSI3LjciCiAgICAgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIj4KICAgIDxyZWN0IHg9Ii0xMjgiIHk9Ii05MiIgd2lkdGg9IjI1NiIgaGVpZ2h0PSIxODQiIHJ4PSIyMyIvPgogICAgPGNpcmNsZSBjeD0iLTU4IiBjeT0iLTI4IiByPSIyNiIvPgogICAgPHBhdGggZD0iTSAtMTE1IDc3IEwgLTEzIC0xMyBMIDU4IDQxIEwgMTAyIDYgTCAxMjIgNzcgWiIvPgogIDwvZz4KICA8dGV4dCB4PSI0NTAiIHk9IjUyMiIgdGV4dC1hbmNob3I9Im1pZGRsZSIKICAgICAgICBmb250LWZhbWlseT0iTnVuaXRvLCBTZWdvZSBVSSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iNDQiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNiOThhYTQiPtCk0L7RgtC+INC00LvRjyDQs9Cw0LvQtdGA0LXQuCA2PC90ZXh0PgogIDx0ZXh0IHg9IjQ1MCIgeT0iNTg4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIgogICAgICAgIGZvbnQtZmFtaWx5PSJOdW5pdG8sIFNlZ29lIFVJLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNyIgZmlsbD0iI2M5YTZiOCI+OTAww5c4MDA8L3RleHQ+Cjwvc3ZnPg==" alt="Укладка волос" loading="lazy"></figure>
+      <figure><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgODAwIiB3aWR0aD0iOTAwIiBoZWlnaHQ9IjgwMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSLQpNC+0YLQviDQtNC70Y8g0LPQsNC70LXRgNC10LggNyI+CiAgPHJlY3Qgd2lkdGg9IjkwMCIgaGVpZ2h0PSI4MDAiIGZpbGw9IiNmZGY2ZmEiLz4KICA8cmVjdCB4PSIxMCIgeT0iMTAiIHdpZHRoPSI4ODAiIGhlaWdodD0iNzgwIiByeD0iMTgiIGZpbGw9Im5vbmUiCiAgICAgICAgc3Ryb2tlPSIjZTZjOGRhIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1kYXNoYXJyYXk9IjE0IDEyIi8+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDUwLDMzMCkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2RjYjNjYiIgc3Ryb2tlLXdpZHRoPSI3LjciCiAgICAgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIj4KICAgIDxyZWN0IHg9Ii0xMjgiIHk9Ii05MiIgd2lkdGg9IjI1NiIgaGVpZ2h0PSIxODQiIHJ4PSIyMyIvPgogICAgPGNpcmNsZSBjeD0iLTU4IiBjeT0iLTI4IiByPSIyNiIvPgogICAgPHBhdGggZD0iTSAtMTE1IDc3IEwgLTEzIC0xMyBMIDU4IDQxIEwgMTAyIDYgTCAxMjIgNzcgWiIvPgogIDwvZz4KICA8dGV4dCB4PSI0NTAiIHk9IjUyMiIgdGV4dC1hbmNob3I9Im1pZGRsZSIKICAgICAgICBmb250LWZhbWlseT0iTnVuaXRvLCBTZWdvZSBVSSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iNDQiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNiOThhYTQiPtCk0L7RgtC+INC00LvRjyDQs9Cw0LvQtdGA0LXQuCA3PC90ZXh0PgogIDx0ZXh0IHg9IjQ1MCIgeT0iNTg4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIgogICAgICAgIGZvbnQtZmFtaWx5PSJOdW5pdG8sIFNlZ29lIFVJLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNyIgZmlsbD0iI2M5YTZiOCI+OTAww5c4MDA8L3RleHQ+Cjwvc3ZnPg==" alt="Макияж" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= Отзывы ======================= -->
+<section class="section" id="reviews">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Отзывы · примеры текстов</span>
+      <h2>Что говорят гостьи</h2>
+    </div>
+
+    <div class="reviews">
+      <article class="review reveal">
+        <div class="stars">★★★★★</div>
+        <p>«Прихожу уже второй год. Персонал позитивный и дружелюбный, всегда предложат чай и никогда не спешат. Маникюр держится идеально.»</p>
+        <footer><span class="ava">А</span><span><b>Анна</b><small>Маникюр, покрытие</small></span></footer>
+      </article>
+      <article class="review reveal">
+        <div class="stars">★★★★★</div>
+        <p>«Очень уютно и красиво, прямо как дома, только лучше. Сделали ресницы — эффект нежный, ровно как я просила.»</p>
+        <footer><span class="ava">К</span><span><b>Кристина</b><small>Наращивание ресниц</small></span></footer>
+      </article>
+      <article class="review reveal">
+        <div class="stars">★★★★★</div>
+        <p>«Наконец-то нашла свой салон в центре. Записалась онлайн за пять минут, пришла — всё готово, меня ждали.»</p>
+        <footer><span class="ava">М</span><span><b>Мария</b><small>Стрижка и уход</small></span></footer>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= Контакты ======================= -->
+<section class="section" id="contacts">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Контакты</span>
+      <h2>Ждём вас в гости</h2>
+    </div>
+
+    <div class="contacts-grid">
+      <div class="panel reveal">
+        <ul class="contact-list">
+          <li><i>📍</i><span><b>Москва, ул. Большая Грузинская, 20</b><span>м. Белорусская / Баррикадная, 7 минут пешком</span></span></li>
+          <li><i>📞</i><span><b><a href="tel:+79162041532">+7 916 204-15-32</a></b><span>звонок или WhatsApp/Telegram</span></span></li>
+          <li><i>🕰️</i><span><b>Ежедневно 10:00 — 21:00</b><span>последняя запись в 20:00</span></span></li>
+          <li><i>💌</i><span><b>hello@1618avenue.ru</b><span>сотрудничество и вопросы</span></span></li>
+        </ul>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#booking">Записаться онлайн</a>
+          <a class="btn btn-ghost" href="tel:+79162041532">Позвонить</a>
+        </div>
+      </div>
+
+      <div class="map-card reveal">
+        <div>
+          <div class="pin">📍</div>
+          <h3>Большая Грузинская, 20</h3>
+          <p class="lead">Здесь будет интерактивная карта Яндекс с точкой салона.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= CTA ======================= -->
+<section class="section">
+  <div class="container">
+    <div class="cta reveal">
+      <h2>Подарите себе пару часов нежности</h2>
+      <p>Первый визит — комплимент от салона: экспресс-уход для рук и ваш любимый десерт к чаю.</p>
+      <a class="btn btn-primary" href="#booking">Выбрать свободный час ☁️</a>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= Подвал ======================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="logo" href="#top"><span class="logo-mark">🎀</span><span><b>1618</b> <span>Avenue</span></span></a>
+        <p>Камерный салон красоты в центре Москвы. Нежно, аккуратно и с любовью к деталям.</p>
+      </div>
+      <div>
+        <h4>Разделы</h4>
+        <ul>
+          <li><a href="#about">О салоне</a></li>
+          <li><a href="#services">Услуги и цены</a></li>
+          <li><a href="#masters">Мастера</a></li>
+          <li><a href="#booking">Онлайн-запись</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <ul>
+          <li>Большая Грузинская, 20</li>
+          <li><a href="tel:+79162041532">+7 916 204-15-32</a></li>
+          <li>Ежедневно 10:00 — 21:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 1618 Avenue · демо-версия лендинга</span>
+      <span>Цены и тексты — демонстрационные</span>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+/* =============================================================================
+   1618 Avenue — демо-лендинг с онлайн-записью
+   Всё хранится локально (localStorage). Точка интеграции с Telegram-ботом —
+   функция sendToManager() в самом низу файла.
+   ========================================================================== */
+
+(function () {
+  'use strict';
+
+  /* ---------------------------------------------------------------------------
+     1. Данные салона (демо)
+     ------------------------------------------------------------------------ */
+
+  var CATEGORIES = [
+    { id: 'all',    title: 'Все услуги' },
+    { id: 'nails',  title: 'Ногти' },
+    { id: 'lashes', title: 'Ресницы и брови' },
+    { id: 'hair',   title: 'Волосы' },
+    { id: 'face',   title: 'Лицо и уходы' },
+    { id: 'body',   title: 'Эпиляция' }
+  ];
+
+  var SERVICES = [
+    { id: 'manicure',    cat: 'nails',  title: 'Маникюр с покрытием', price: 3200, dur: 90,
+      tag: 'хит', img: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDkwMCIgd2lkdGg9IjEyMDAiIGhlaWdodD0iOTAwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9ItCk0L7RgtC+OiDQnNCw0L3QuNC60Y7RgCI+CiAgPHJlY3Qgd2lkdGg9IjEyMDAiIGhlaWdodD0iOTAwIiBmaWxsPSIjZmRmNmZhIi8+CiAgPHJlY3QgeD0iMTAiIHk9IjEwIiB3aWR0aD0iMTE4MCIgaGVpZ2h0PSI4ODAiIHJ4PSIxOCIgZmlsbD0ibm9uZSIKICAgICAgICBzdHJva2U9IiNlNmM4ZGEiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWRhc2hhcnJheT0iMTQgMTIiLz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2MDAsMzcxKSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZGNiM2NiIiBzdHJva2Utd2lkdGg9IjguNiIKICAgICBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbGluZWNhcD0icm91bmQiPgogICAgPHJlY3QgeD0iLTE0NCIgeT0iLTEwNCIgd2lkdGg9IjI4OCIgaGVpZ2h0PSIyMDciIHJ4PSIyNiIvPgogICAgPGNpcmNsZSBjeD0iLTY1IiBjeT0iLTMyIiByPSIyOSIvPgogICAgPHBhdGggZD0iTSAtMTMwIDg2IEwgLTE0IC0xNCBMIDY1IDQ2IEwgMTE1IDcgTCAxMzcgODYgWiIvPgogIDwvZz4KICA8dGV4dCB4PSI2MDAiIHk9IjU4NyIgdGV4dC1hbmNob3I9Im1pZGRsZSIKICAgICAgICBmb250LWZhbWlseT0iTnVuaXRvLCBTZWdvZSBVSSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iNTAiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNiOThhYTQiPtCk0L7RgtC+OiDQnNCw0L3QuNC60Y7RgDwvdGV4dD4KICA8dGV4dCB4PSI2MDAiIHk9IjY2MSIgdGV4dC1hbmNob3I9Im1pZGRsZSIKICAgICAgICBmb250LWZhbWlseT0iTnVuaXRvLCBTZWdvZSBVSSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMzEiIGZpbGw9IiNjOWE2YjgiPtCz0L7RgNC40LfQvtC90YLQsNC70YzQvdC+0LUgwrcgMTIwMMOXOTAwPC90ZXh0Pgo8L3N2Zz4=',
+      desc: 'Аппаратный маникюр, уход за кутикулой и стойкий гель-лак любимого оттенка.' },
+    { id: 'nail-design', cat: 'nails',  title: 'Дизайн и наращивание', price: 4800, dur: 150,
+      tag: 'премиум', img: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDkwMCIgd2lkdGg9IjEyMDAiIGhlaWdodD0iOTAwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9ItCk0L7RgtC+OiDQlNC40LfQsNC50L0g0Lgg0L3QsNGA0LDRidC40LLQsNC90LjQtSI+CiAgPHJlY3Qgd2lkdGg9IjEyMDAiIGhlaWdodD0iOTAwIiBmaWxsPSIjZmRmNmZhIi8+CiAgPHJlY3QgeD0iMTAiIHk9IjEwIiB3aWR0aD0iMTE4MCIgaGVpZ2h0PSI4ODAiIHJ4PSIxOCIgZmlsbD0ibm9uZSIKICAgICAgICBzdHJva2U9IiNlNmM4ZGEiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWRhc2hhcnJheT0iMTQgMTIiLz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2MDAsMzcxKSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZGNiM2NiIiBzdHJva2Utd2lkdGg9IjguNiIKICAgICBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbGluZWNhcD0icm91bmQiPgogICAgPHJlY3QgeD0iLTE0NCIgeT0iLTEwNCIgd2lkdGg9IjI4OCIgaGVpZ2h0PSIyMDciIHJ4PSIyNiIvPgogICAgPGNpcmNsZSBjeD0iLTY1IiBjeT0iLTMyIiByPSIyOSIvPgogICAgPHBhdGggZD0iTSAtMTMwIDg2IEwgLTE0IC0xNCBMIDY1IDQ2IEwgMTE1IDcgTCAxMzcgODYgWiIvPgogIDwvZz4KICA8dGV4dCB4PSI2MDAiIHk9IjU4NyIgdGV4dC1hbmNob3I9Im1pZGRsZSIKICAgICAgICBmb250LWZhbWlseT0iTnVuaXRvLCBTZWdvZSBVSSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iNTAiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNiOThhYTQiPtCk0L7RgtC+OiDQlNC40LfQsNC50L0g0Lgg0L3QsNGA0LDRidC40LLQsNC90LjQtTwvdGV4dD4KICA8dGV4dCB4PSI2MDAiIHk9IjY2MSIgdGV4dC1hbmNob3I9Im1pZGRsZSIKICAgICAgICBmb250LWZhbWlseT0iTnVuaXRvLCBTZWdvZSBVSSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMzEiIGZpbGw9IiNjOWE2YjgiPtCz0L7RgNC40LfQvtC90YLQsNC70YzQvdC+0LUgwrcgMTIwMMOXOTAwPC90ZXh0Pgo8L3N2Zz4=',
+      desc: 'Форма под вашу руку, укрепление и аккуратный дизайн — от нюда до сладкой ваты.' },
+    { id: 'pedicure',    cat: 'nails',  title: 'Педикюр SPA', price: 3900, dur: 90,
+      tag: 'уход', img: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDkwMCIgd2lkdGg9IjEyMDAiIGhlaWdodD0iOTAwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9ItCk0L7RgtC+OiDQn9C10LTQuNC60Y7RgCBTUEEiPgogIDxyZWN0IHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjkwMCIgZmlsbD0iI2ZkZjZmYSIvPgogIDxyZWN0IHg9IjEwIiB5PSIxMCIgd2lkdGg9IjExODAiIGhlaWdodD0iODgwIiByeD0iMTgiIGZpbGw9Im5vbmUiCiAgICAgICAgc3Ryb2tlPSIjZTZjOGRhIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1kYXNoYXJyYXk9IjE0IDEyIi8+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjAwLDM3MSkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2RjYjNjYiIgc3Ryb2tlLXdpZHRoPSI4LjYiCiAgICAgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIj4KICAgIDxyZWN0IHg9Ii0xNDQiIHk9Ii0xMDQiIHdpZHRoPSIyODgiIGhlaWdodD0iMjA3IiByeD0iMjYiLz4KICAgIDxjaXJjbGUgY3g9Ii02NSIgY3k9Ii0zMiIgcj0iMjkiLz4KICAgIDxwYXRoIGQ9Ik0gLTEzMCA4NiBMIC0xNCAtMTQgTCA2NSA0NiBMIDExNSA3IEwgMTM3IDg2IFoiLz4KICA8L2c+CiAgPHRleHQgeD0iNjAwIiB5PSI1ODciIHRleHQtYW5jaG9yPSJtaWRkbGUiCiAgICAgICAgZm9udC1mYW1pbHk9Ik51bml0bywgU2Vnb2UgVUksIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjUwIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjYjk4YWE0Ij7QpNC+0YLQvjog0J/QtdC00LjQutGO0YAgU1BBPC90ZXh0PgogIDx0ZXh0IHg9IjYwMCIgeT0iNjYxIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIgogICAgICAgIGZvbnQtZmFtaWx5PSJOdW5pdG8sIFNlZ29lIFVJLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIzMSIgZmlsbD0iI2M5YTZiOCI+0LPQvtGA0LjQt9C+0L3RgtCw0LvRjNC90L7QtSDCtyAxMjAww5c5MDA8L3RleHQ+Cjwvc3ZnPg==',
+      desc: 'Тёплая ванночка с молочком, деликатная обработка и питательная маска.' },
+    { id: 'lashes',      cat: 'lashes', title: 'Наращивание ресниц', price: 3500, dur: 120,
+      tag: 'хит', img: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDkwMCIgd2lkdGg9IjEyMDAiIGhlaWdodD0iOTAwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9ItCk0L7RgtC+OiDQndCw0YDQsNGJ0LjQstCw0L3QuNC1INGA0LXRgdC90LjRhiI+CiAgPHJlY3Qgd2lkdGg9IjEyMDAiIGhlaWdodD0iOTAwIiBmaWxsPSIjZmRmNmZhIi8+CiAgPHJlY3QgeD0iMTAiIHk9IjEwIiB3aWR0aD0iMTE4MCIgaGVpZ2h0PSI4ODAiIHJ4PSIxOCIgZmlsbD0ibm9uZSIKICAgICAgICBzdHJva2U9IiNlNmM4ZGEiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWRhc2hhcnJheT0iMTQgMTIiLz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2MDAsMzcxKSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZGNiM2NiIiBzdHJva2Utd2lkdGg9IjguNiIKICAgICBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbGluZWNhcD0icm91bmQiPgogICAgPHJlY3QgeD0iLTE0NCIgeT0iLTEwNCIgd2lkdGg9IjI4OCIgaGVpZ2h0PSIyMDciIHJ4PSIyNiIvPgogICAgPGNpcmNsZSBjeD0iLTY1IiBjeT0iLTMyIiByPSIyOSIvPgogICAgPHBhdGggZD0iTSAtMTMwIDg2IEwgLTE0IC0xNCBMIDY1IDQ2IEwgMTE1IDcgTCAxMzcgODYgWiIvPgogIDwvZz4KICA8dGV4dCB4PSI2MDAiIHk9IjU4NyIgdGV4dC1hbmNob3I9Im1pZGRsZSIKICAgICAgICBmb250LWZhbWlseT0iTnVuaXRvLCBTZWdvZSBVSSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iNTAiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNiOThhYTQiPtCk0L7RgtC+OiDQndCw0YDQsNGJ0LjQstCw0L3QuNC1INGA0LXRgdC90LjRhjwvdGV4dD4KICA8dGV4dCB4PSI2MDAiIHk9IjY2MSIgdGV4dC1hbmNob3I9Im1pZGRsZSIKICAgICAgICBmb250LWZhbWlseT0iTnVuaXRvLCBTZWdvZSBVSSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMzEiIGZpbGw9IiNjOWE2YjgiPtCz0L7RgNC40LfQvtC90YLQsNC70YzQvdC+0LUgwrcgMTIwMMOXOTAwPC90ZXh0Pgo8L3N2Zz4=',
+      desc: 'Классика, 2D или лёгкий объём — эффект, который выглядит как «свои, но лучше».' },
+    { id: 'lamination',  cat: 'lashes', title: 'Ламинирование ресниц', price: 2900, dur: 70,
+      tag: 'нежно', img: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDkwMCIgd2lkdGg9IjEyMDAiIGhlaWdodD0iOTAwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9ItCk0L7RgtC+OiDQm9Cw0LzQuNC90LjRgNC+0LLQsNC90LjQtSDRgNC10YHQvdC40YYiPgogIDxyZWN0IHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjkwMCIgZmlsbD0iI2ZkZjZmYSIvPgogIDxyZWN0IHg9IjEwIiB5PSIxMCIgd2lkdGg9IjExODAiIGhlaWdodD0iODgwIiByeD0iMTgiIGZpbGw9Im5vbmUiCiAgICAgICAgc3Ryb2tlPSIjZTZjOGRhIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1kYXNoYXJyYXk9IjE0IDEyIi8+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjAwLDM3MSkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2RjYjNjYiIgc3Ryb2tlLXdpZHRoPSI4LjYiCiAgICAgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIj4KICAgIDxyZWN0IHg9Ii0xNDQiIHk9Ii0xMDQiIHdpZHRoPSIyODgiIGhlaWdodD0iMjA3IiByeD0iMjYiLz4KICAgIDxjaXJjbGUgY3g9Ii02NSIgY3k9Ii0zMiIgcj0iMjkiLz4KICAgIDxwYXRoIGQ9Ik0gLTEzMCA4NiBMIC0xNCAtMTQgTCA2NSA0NiBMIDExNSA3IEwgMTM3IDg2IFoiLz4KICA8L2c+CiAgPHRleHQgeD0iNjAwIiB5PSI1ODciIHRleHQtYW5jaG9yPSJtaWRkbGUiCiAgICAgICAgZm9udC1mYW1pbHk9Ik51bml0bywgU2Vnb2UgVUksIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjUwIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjYjk4YWE0Ij7QpNC+0YLQvjog0JvQsNC80LjQvdC40YDQvtCy0LDQvdC40LUg0YDQtdGB0L3QuNGGPC90ZXh0PgogIDx0ZXh0IHg9IjYwMCIgeT0iNjYxIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIgogICAgICAgIGZvbnQtZmFtaWx5PSJOdW5pdG8sIFNlZ29lIFVJLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIzMSIgZmlsbD0iI2M5YTZiOCI+0LPQvtGA0LjQt9C+0L3RgtCw0LvRjNC90L7QtSDCtyAxMjAww5c5MDA8L3RleHQ+Cjwvc3ZnPg==',
+      desc: 'Изгиб, питание и ботокс: ресницы поднимаются и остаются мягкими.' },
+    { id: 'brows',       cat: 'lashes', title: 'Брови: форма и окрашивание', price: 2200, dur: 60,
+      tag: 'быстро', img: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDkwMCIgd2lkdGg9IjEyMDAiIGhlaWdodD0iOTAwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9ItCk0L7RgtC+OiDQkdGA0L7QstC4Ij4KICA8cmVjdCB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI5MDAiIGZpbGw9IiNmZGY2ZmEiLz4KICA8cmVjdCB4PSIxMCIgeT0iMTAiIHdpZHRoPSIxMTgwIiBoZWlnaHQ9Ijg4MCIgcng9IjE4IiBmaWxsPSJub25lIgogICAgICAgIHN0cm9rZT0iI2U2YzhkYSIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtZGFzaGFycmF5PSIxNCAxMiIvPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYwMCwzNzEpIiBmaWxsPSJub25lIiBzdHJva2U9IiNkY2IzY2IiIHN0cm9rZS13aWR0aD0iOC42IgogICAgIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCI+CiAgICA8cmVjdCB4PSItMTQ0IiB5PSItMTA0IiB3aWR0aD0iMjg4IiBoZWlnaHQ9IjIwNyIgcng9IjI2Ii8+CiAgICA8Y2lyY2xlIGN4PSItNjUiIGN5PSItMzIiIHI9IjI5Ii8+CiAgICA8cGF0aCBkPSJNIC0xMzAgODYgTCAtMTQgLTE0IEwgNjUgNDYgTCAxMTUgNyBMIDEzNyA4NiBaIi8+CiAgPC9nPgogIDx0ZXh0IHg9IjYwMCIgeT0iNTg3IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIgogICAgICAgIGZvbnQtZmFtaWx5PSJOdW5pdG8sIFNlZ29lIFVJLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI1MCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iI2I5OGFhNCI+0KTQvtGC0L46INCR0YDQvtCy0Lg8L3RleHQ+CiAgPHRleHQgeD0iNjAwIiB5PSI2NjEiIHRleHQtYW5jaG9yPSJtaWRkbGUiCiAgICAgICAgZm9udC1mYW1pbHk9Ik51bml0bywgU2Vnb2UgVUksIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjMxIiBmaWxsPSIjYzlhNmI4Ij7Qs9C+0YDQuNC30L7QvdGC0LDQu9GM0L3QvtC1IMK3IDEyMDDDlzkwMDwvdGV4dD4KPC9zdmc+',
+      desc: 'Архитектура по чертам лица, окрашивание краской или хной, укладка.' },
+    { id: 'haircut',     cat: 'hair',   title: 'Стрижка и укладка', price: 3800, dur: 90,
+      tag: 'стиль', img: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDkwMCIgd2lkdGg9IjEyMDAiIGhlaWdodD0iOTAwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9ItCk0L7RgtC+OiDQodGC0YDQuNC20LrQsCDQuCDRg9C60LvQsNC00LrQsCI+CiAgPHJlY3Qgd2lkdGg9IjEyMDAiIGhlaWdodD0iOTAwIiBmaWxsPSIjZmRmNmZhIi8+CiAgPHJlY3QgeD0iMTAiIHk9IjEwIiB3aWR0aD0iMTE4MCIgaGVpZ2h0PSI4ODAiIHJ4PSIxOCIgZmlsbD0ibm9uZSIKICAgICAgICBzdHJva2U9IiNlNmM4ZGEiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWRhc2hhcnJheT0iMTQgMTIiLz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2MDAsMzcxKSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZGNiM2NiIiBzdHJva2Utd2lkdGg9IjguNiIKICAgICBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbGluZWNhcD0icm91bmQiPgogICAgPHJlY3QgeD0iLTE0NCIgeT0iLTEwNCIgd2lkdGg9IjI4OCIgaGVpZ2h0PSIyMDciIHJ4PSIyNiIvPgogICAgPGNpcmNsZSBjeD0iLTY1IiBjeT0iLTMyIiByPSIyOSIvPgogICAgPHBhdGggZD0iTSAtMTMwIDg2IEwgLTE0IC0xNCBMIDY1IDQ2IEwgMTE1IDcgTCAxMzcgODYgWiIvPgogIDwvZz4KICA8dGV4dCB4PSI2MDAiIHk9IjU4NyIgdGV4dC1hbmNob3I9Im1pZGRsZSIKICAgICAgICBmb250LWZhbWlseT0iTnVuaXRvLCBTZWdvZSBVSSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iNTAiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNiOThhYTQiPtCk0L7RgtC+OiDQodGC0YDQuNC20LrQsCDQuCDRg9C60LvQsNC00LrQsDwvdGV4dD4KICA8dGV4dCB4PSI2MDAiIHk9IjY2MSIgdGV4dC1hbmNob3I9Im1pZGRsZSIKICAgICAgICBmb250LWZhbWlseT0iTnVuaXRvLCBTZWdvZSBVSSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMzEiIGZpbGw9IiNjOWE2YjgiPtCz0L7RgNC40LfQvtC90YLQsNC70YzQvdC+0LUgwrcgMTIwMMOXOTAwPC90ZXh0Pgo8L3N2Zz4=',
+      desc: 'Консультация, стрижка по форме лица и лёгкая укладка «как из журнала».' },
+    { id: 'coloring',    cat: 'hair',   title: 'Окрашивание', price: 7500, dur: 210,
+      tag: 'премиум', img: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDkwMCIgd2lkdGg9IjEyMDAiIGhlaWdodD0iOTAwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9ItCk0L7RgtC+OiDQntC60YDQsNGI0LjQstCw0L3QuNC1Ij4KICA8cmVjdCB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI5MDAiIGZpbGw9IiNmZGY2ZmEiLz4KICA8cmVjdCB4PSIxMCIgeT0iMTAiIHdpZHRoPSIxMTgwIiBoZWlnaHQ9Ijg4MCIgcng9IjE4IiBmaWxsPSJub25lIgogICAgICAgIHN0cm9rZT0iI2U2YzhkYSIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtZGFzaGFycmF5PSIxNCAxMiIvPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYwMCwzNzEpIiBmaWxsPSJub25lIiBzdHJva2U9IiNkY2IzY2IiIHN0cm9rZS13aWR0aD0iOC42IgogICAgIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCI+CiAgICA8cmVjdCB4PSItMTQ0IiB5PSItMTA0IiB3aWR0aD0iMjg4IiBoZWlnaHQ9IjIwNyIgcng9IjI2Ii8+CiAgICA8Y2lyY2xlIGN4PSItNjUiIGN5PSItMzIiIHI9IjI5Ii8+CiAgICA8cGF0aCBkPSJNIC0xMzAgODYgTCAtMTQgLTE0IEwgNjUgNDYgTCAxMTUgNyBMIDEzNyA4NiBaIi8+CiAgPC9nPgogIDx0ZXh0IHg9IjYwMCIgeT0iNTg3IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIgogICAgICAgIGZvbnQtZmFtaWx5PSJOdW5pdG8sIFNlZ29lIFVJLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI1MCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iI2I5OGFhNCI+0KTQvtGC0L46INCe0LrRgNCw0YjQuNCy0LDQvdC40LU8L3RleHQ+CiAgPHRleHQgeD0iNjAwIiB5PSI2NjEiIHRleHQtYW5jaG9yPSJtaWRkbGUiCiAgICAgICAgZm9udC1mYW1pbHk9Ik51bml0bywgU2Vnb2UgVUksIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjMxIiBmaWxsPSIjYzlhNmI4Ij7Qs9C+0YDQuNC30L7QvdGC0LDQu9GM0L3QvtC1IMK3IDEyMDDDlzkwMDwvdGV4dD4KPC9zdmc+',
+      desc: 'Сложное окрашивание, тонирование и уход. Цена зависит от длины волос.' },
+    { id: 'hair-care',   cat: 'hair',   title: 'Уход для волос', price: 4200, dur: 80,
+      tag: 'восстановление', img: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDkwMCIgd2lkdGg9IjEyMDAiIGhlaWdodD0iOTAwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9ItCk0L7RgtC+OiDQo9GF0L7QtCDQtNC70Y8g0LLQvtC70L7RgSI+CiAgPHJlY3Qgd2lkdGg9IjEyMDAiIGhlaWdodD0iOTAwIiBmaWxsPSIjZmRmNmZhIi8+CiAgPHJlY3QgeD0iMTAiIHk9IjEwIiB3aWR0aD0iMTE4MCIgaGVpZ2h0PSI4ODAiIHJ4PSIxOCIgZmlsbD0ibm9uZSIKICAgICAgICBzdHJva2U9IiNlNmM4ZGEiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWRhc2hhcnJheT0iMTQgMTIiLz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2MDAsMzcxKSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZGNiM2NiIiBzdHJva2Utd2lkdGg9IjguNiIKICAgICBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbGluZWNhcD0icm91bmQiPgogICAgPHJlY3QgeD0iLTE0NCIgeT0iLTEwNCIgd2lkdGg9IjI4OCIgaGVpZ2h0PSIyMDciIHJ4PSIyNiIvPgogICAgPGNpcmNsZSBjeD0iLTY1IiBjeT0iLTMyIiByPSIyOSIvPgogICAgPHBhdGggZD0iTSAtMTMwIDg2IEwgLTE0IC0xNCBMIDY1IDQ2IEwgMTE1IDcgTCAxMzcgODYgWiIvPgogIDwvZz4KICA8dGV4dCB4PSI2MDAiIHk9IjU4NyIgdGV4dC1hbmNob3I9Im1pZGRsZSIKICAgICAgICBmb250LWZhbWlseT0iTnVuaXRvLCBTZWdvZSBVSSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iNTAiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNiOThhYTQiPtCk0L7RgtC+OiDQo9GF0L7QtCDQtNC70Y8g0LLQvtC70L7RgTwvdGV4dD4KICA8dGV4dCB4PSI2MDAiIHk9IjY2MSIgdGV4dC1hbmNob3I9Im1pZGRsZSIKICAgICAgICBmb250LWZhbWlseT0iTnVuaXRvLCBTZWdvZSBVSSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMzEiIGZpbGw9IiNjOWE2YjgiPtCz0L7RgNC40LfQvtC90YLQsNC70YzQvdC+0LUgwrcgMTIwMMOXOTAwPC90ZXh0Pgo8L3N2Zz4=',
+      desc: 'Реконструкция, кератиновое питание и блеск, который держится недели.' },
+    { id: 'makeup',      cat: 'face',   title: 'Макияж', price: 4500, dur: 80,
+      tag: 'событие', img: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDkwMCIgd2lkdGg9IjEyMDAiIGhlaWdodD0iOTAwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9ItCk0L7RgtC+OiDQnNCw0LrQuNGP0LYiPgogIDxyZWN0IHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjkwMCIgZmlsbD0iI2ZkZjZmYSIvPgogIDxyZWN0IHg9IjEwIiB5PSIxMCIgd2lkdGg9IjExODAiIGhlaWdodD0iODgwIiByeD0iMTgiIGZpbGw9Im5vbmUiCiAgICAgICAgc3Ryb2tlPSIjZTZjOGRhIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1kYXNoYXJyYXk9IjE0IDEyIi8+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjAwLDM3MSkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2RjYjNjYiIgc3Ryb2tlLXdpZHRoPSI4LjYiCiAgICAgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIj4KICAgIDxyZWN0IHg9Ii0xNDQiIHk9Ii0xMDQiIHdpZHRoPSIyODgiIGhlaWdodD0iMjA3IiByeD0iMjYiLz4KICAgIDxjaXJjbGUgY3g9Ii02NSIgY3k9Ii0zMiIgcj0iMjkiLz4KICAgIDxwYXRoIGQ9Ik0gLTEzMCA4NiBMIC0xNCAtMTQgTCA2NSA0NiBMIDExNSA3IEwgMTM3IDg2IFoiLz4KICA8L2c+CiAgPHRleHQgeD0iNjAwIiB5PSI1ODciIHRleHQtYW5jaG9yPSJtaWRkbGUiCiAgICAgICAgZm9udC1mYW1pbHk9Ik51bml0bywgU2Vnb2UgVUksIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjUwIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjYjk4YWE0Ij7QpNC+0YLQvjog0JzQsNC60LjRj9C2PC90ZXh0PgogIDx0ZXh0IHg9IjYwMCIgeT0iNjYxIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIgogICAgICAgIGZvbnQtZmFtaWx5PSJOdW5pdG8sIFNlZ29lIFVJLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIzMSIgZmlsbD0iI2M5YTZiOCI+0LPQvtGA0LjQt9C+0L3RgtCw0LvRjNC90L7QtSDCtyAxMjAww5c5MDA8L3RleHQ+Cjwvc3ZnPg==',
+      desc: 'Дневной, вечерний или съёмочный. Стойкая база и косметика люкс-класса.' },
+    { id: 'facial',      cat: 'face',   title: 'Уход за лицом', price: 5600, dur: 90,
+      tag: 'косметолог', img: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDkwMCIgd2lkdGg9IjEyMDAiIGhlaWdodD0iOTAwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9ItCk0L7RgtC+OiDQo9GF0L7QtCDQt9CwINC70LjRhtC+0LwiPgogIDxyZWN0IHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjkwMCIgZmlsbD0iI2ZkZjZmYSIvPgogIDxyZWN0IHg9IjEwIiB5PSIxMCIgd2lkdGg9IjExODAiIGhlaWdodD0iODgwIiByeD0iMTgiIGZpbGw9Im5vbmUiCiAgICAgICAgc3Ryb2tlPSIjZTZjOGRhIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1kYXNoYXJyYXk9IjE0IDEyIi8+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjAwLDM3MSkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2RjYjNjYiIgc3Ryb2tlLXdpZHRoPSI4LjYiCiAgICAgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIj4KICAgIDxyZWN0IHg9Ii0xNDQiIHk9Ii0xMDQiIHdpZHRoPSIyODgiIGhlaWdodD0iMjA3IiByeD0iMjYiLz4KICAgIDxjaXJjbGUgY3g9Ii02NSIgY3k9Ii0zMiIgcj0iMjkiLz4KICAgIDxwYXRoIGQ9Ik0gLTEzMCA4NiBMIC0xNCAtMTQgTCA2NSA0NiBMIDExNSA3IEwgMTM3IDg2IFoiLz4KICA8L2c+CiAgPHRleHQgeD0iNjAwIiB5PSI1ODciIHRleHQtYW5jaG9yPSJtaWRkbGUiCiAgICAgICAgZm9udC1mYW1pbHk9Ik51bml0bywgU2Vnb2UgVUksIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjUwIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjYjk4YWE0Ij7QpNC+0YLQvjog0KPRhdC+0LQg0LfQsCDQu9C40YbQvtC8PC90ZXh0PgogIDx0ZXh0IHg9IjYwMCIgeT0iNjYxIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIgogICAgICAgIGZvbnQtZmFtaWx5PSJOdW5pdG8sIFNlZ29lIFVJLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIzMSIgZmlsbD0iI2M5YTZiOCI+0LPQvtGA0LjQt9C+0L3RgtCw0LvRjNC90L7QtSDCtyAxMjAww5c5MDA8L3RleHQ+Cjwvc3ZnPg==',
+      desc: 'Чистка, увлажнение и массаж лица — кожа как после отпуска.' },
+    { id: 'depilation',  cat: 'body',   title: 'Эпиляция воском / шугаринг', price: 1800, dur: 45,
+      tag: 'деликатно', img: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDkwMCIgd2lkdGg9IjEyMDAiIGhlaWdodD0iOTAwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9ItCk0L7RgtC+OiDQrdC/0LjQu9GP0YbQuNGPIj4KICA8cmVjdCB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI5MDAiIGZpbGw9IiNmZGY2ZmEiLz4KICA8cmVjdCB4PSIxMCIgeT0iMTAiIHdpZHRoPSIxMTgwIiBoZWlnaHQ9Ijg4MCIgcng9IjE4IiBmaWxsPSJub25lIgogICAgICAgIHN0cm9rZT0iI2U2YzhkYSIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtZGFzaGFycmF5PSIxNCAxMiIvPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYwMCwzNzEpIiBmaWxsPSJub25lIiBzdHJva2U9IiNkY2IzY2IiIHN0cm9rZS13aWR0aD0iOC42IgogICAgIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCI+CiAgICA8cmVjdCB4PSItMTQ0IiB5PSItMTA0IiB3aWR0aD0iMjg4IiBoZWlnaHQ9IjIwNyIgcng9IjI2Ii8+CiAgICA8Y2lyY2xlIGN4PSItNjUiIGN5PSItMzIiIHI9IjI5Ii8+CiAgICA8cGF0aCBkPSJNIC0xMzAgODYgTCAtMTQgLTE0IEwgNjUgNDYgTCAxMTUgNyBMIDEzNyA4NiBaIi8+CiAgPC9nPgogIDx0ZXh0IHg9IjYwMCIgeT0iNTg3IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIgogICAgICAgIGZvbnQtZmFtaWx5PSJOdW5pdG8sIFNlZ29lIFVJLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI1MCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iI2I5OGFhNCI+0KTQvtGC0L46INCt0L/QuNC70Y/RhtC40Y88L3RleHQ+CiAgPHRleHQgeD0iNjAwIiB5PSI2NjEiIHRleHQtYW5jaG9yPSJtaWRkbGUiCiAgICAgICAgZm9udC1mYW1pbHk9Ik51bml0bywgU2Vnb2UgVUksIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjMxIiBmaWxsPSIjYzlhNmI4Ij7Qs9C+0YDQuNC30L7QvdGC0LDQu9GM0L3QvtC1IMK3IDEyMDDDlzkwMDwvdGV4dD4KPC9zdmc+',
+      desc: 'Гипоаллергенные составы, аккуратная техника и уход после процедуры.' }
+  ];
+
+  var MASTERS = [
+    { id: 'alina',  name: 'Алина',   role: 'Nail-мастер',        exp: '9 лет в профессии, любит нюд и минимализм.', img: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgNjAwIiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjYwMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSLQpNC+0YLQvjog0JDQu9C40L3QsCI+CiAgPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSI2MDAiIGZpbGw9IiNmZGY2ZmEiLz4KICA8cmVjdCB4PSIxMCIgeT0iMTAiIHdpZHRoPSI1ODAiIGhlaWdodD0iNTgwIiByeD0iMTgiIGZpbGw9Im5vbmUiCiAgICAgICAgc3Ryb2tlPSIjZTZjOGRhIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1kYXNoYXJyYXk9IjE0IDEyIi8+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzAwLDI0NykiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2RjYjNjYiIgc3Ryb2tlLXdpZHRoPSI1LjgiCiAgICAgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIj4KICAgIDxyZWN0IHg9Ii05NiIgeT0iLTY5IiB3aWR0aD0iMTkyIiBoZWlnaHQ9IjEzOCIgcng9IjE3Ii8+CiAgICA8Y2lyY2xlIGN4PSItNDMiIGN5PSItMjEiIHI9IjE5Ii8+CiAgICA8cGF0aCBkPSJNIC04NiA1OCBMIC0xMCAtMTAgTCA0MyAzMSBMIDc3IDUgTCA5MSA1OCBaIi8+CiAgPC9nPgogIDx0ZXh0IHg9IjMwMCIgeT0iMzkxIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIgogICAgICAgIGZvbnQtZmFtaWx5PSJOdW5pdG8sIFNlZ29lIFVJLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIzMyIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iI2I5OGFhNCI+0KTQvtGC0L46INCQ0LvQuNC90LA8L3RleHQ+CiAgPHRleHQgeD0iMzAwIiB5PSI0NDEiIHRleHQtYW5jaG9yPSJtaWRkbGUiCiAgICAgICAgZm9udC1mYW1pbHk9Ik51bml0bywgU2Vnb2UgVUksIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIwIiBmaWxsPSIjYzlhNmI4Ij7QutCy0LDQtNGA0LDRgtC90L7QtSDCtyA2MDDDlzYwMDwvdGV4dD4KPC9zdmc+' },
+    { id: 'sofia',  name: 'София',   role: 'Lash & brow',        exp: 'Топ-мастер по ресницам, обучает новичков.',  img: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgNjAwIiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjYwMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSLQpNC+0YLQvjog0KHQvtGE0LjRjyI+CiAgPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSI2MDAiIGZpbGw9IiNmZGY2ZmEiLz4KICA8cmVjdCB4PSIxMCIgeT0iMTAiIHdpZHRoPSI1ODAiIGhlaWdodD0iNTgwIiByeD0iMTgiIGZpbGw9Im5vbmUiCiAgICAgICAgc3Ryb2tlPSIjZTZjOGRhIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1kYXNoYXJyYXk9IjE0IDEyIi8+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzAwLDI0NykiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2RjYjNjYiIgc3Ryb2tlLXdpZHRoPSI1LjgiCiAgICAgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIj4KICAgIDxyZWN0IHg9Ii05NiIgeT0iLTY5IiB3aWR0aD0iMTkyIiBoZWlnaHQ9IjEzOCIgcng9IjE3Ii8+CiAgICA8Y2lyY2xlIGN4PSItNDMiIGN5PSItMjEiIHI9IjE5Ii8+CiAgICA8cGF0aCBkPSJNIC04NiA1OCBMIC0xMCAtMTAgTCA0MyAzMSBMIDc3IDUgTCA5MSA1OCBaIi8+CiAgPC9nPgogIDx0ZXh0IHg9IjMwMCIgeT0iMzkxIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIgogICAgICAgIGZvbnQtZmFtaWx5PSJOdW5pdG8sIFNlZ29lIFVJLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIzMyIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iI2I5OGFhNCI+0KTQvtGC0L46INCh0L7RhNC40Y88L3RleHQ+CiAgPHRleHQgeD0iMzAwIiB5PSI0NDEiIHRleHQtYW5jaG9yPSJtaWRkbGUiCiAgICAgICAgZm9udC1mYW1pbHk9Ik51bml0bywgU2Vnb2UgVUksIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIwIiBmaWxsPSIjYzlhNmI4Ij7QutCy0LDQtNGA0LDRgtC90L7QtSDCtyA2MDDDlzYwMDwvdGV4dD4KPC9zdmc+' },
+    { id: 'polina', name: 'Полина',  role: 'Колорист',           exp: 'Сложные окрашивания и блонд без желтизны.',  img: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgNjAwIiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjYwMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSLQpNC+0YLQvjog0J/QvtC70LjQvdCwIj4KICA8cmVjdCB3aWR0aD0iNjAwIiBoZWlnaHQ9IjYwMCIgZmlsbD0iI2ZkZjZmYSIvPgogIDxyZWN0IHg9IjEwIiB5PSIxMCIgd2lkdGg9IjU4MCIgaGVpZ2h0PSI1ODAiIHJ4PSIxOCIgZmlsbD0ibm9uZSIKICAgICAgICBzdHJva2U9IiNlNmM4ZGEiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWRhc2hhcnJheT0iMTQgMTIiLz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMDAsMjQ3KSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZGNiM2NiIiBzdHJva2Utd2lkdGg9IjUuOCIKICAgICBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbGluZWNhcD0icm91bmQiPgogICAgPHJlY3QgeD0iLTk2IiB5PSItNjkiIHdpZHRoPSIxOTIiIGhlaWdodD0iMTM4IiByeD0iMTciLz4KICAgIDxjaXJjbGUgY3g9Ii00MyIgY3k9Ii0yMSIgcj0iMTkiLz4KICAgIDxwYXRoIGQ9Ik0gLTg2IDU4IEwgLTEwIC0xMCBMIDQzIDMxIEwgNzcgNSBMIDkxIDU4IFoiLz4KICA8L2c+CiAgPHRleHQgeD0iMzAwIiB5PSIzOTEiIHRleHQtYW5jaG9yPSJtaWRkbGUiCiAgICAgICAgZm9udC1mYW1pbHk9Ik51bml0bywgU2Vnb2UgVUksIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjMzIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjYjk4YWE0Ij7QpNC+0YLQvjog0J/QvtC70LjQvdCwPC90ZXh0PgogIDx0ZXh0IHg9IjMwMCIgeT0iNDQxIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIgogICAgICAgIGZvbnQtZmFtaWx5PSJOdW5pdG8sIFNlZ29lIFVJLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyMCIgZmlsbD0iI2M5YTZiOCI+0LrQstCw0LTRgNCw0YLQvdC+0LUgwrcgNjAww5c2MDA8L3RleHQ+Cjwvc3ZnPg==' },
+    { id: 'vera',   name: 'Вера',    role: 'Косметолог',         exp: 'Уходовые протоколы и массаж лица.',          img: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgNjAwIiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjYwMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSLQpNC+0YLQvjog0JLQtdGA0LAiPgogIDxyZWN0IHdpZHRoPSI2MDAiIGhlaWdodD0iNjAwIiBmaWxsPSIjZmRmNmZhIi8+CiAgPHJlY3QgeD0iMTAiIHk9IjEwIiB3aWR0aD0iNTgwIiBoZWlnaHQ9IjU4MCIgcng9IjE4IiBmaWxsPSJub25lIgogICAgICAgIHN0cm9rZT0iI2U2YzhkYSIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtZGFzaGFycmF5PSIxNCAxMiIvPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMwMCwyNDcpIiBmaWxsPSJub25lIiBzdHJva2U9IiNkY2IzY2IiIHN0cm9rZS13aWR0aD0iNS44IgogICAgIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCI+CiAgICA8cmVjdCB4PSItOTYiIHk9Ii02OSIgd2lkdGg9IjE5MiIgaGVpZ2h0PSIxMzgiIHJ4PSIxNyIvPgogICAgPGNpcmNsZSBjeD0iLTQzIiBjeT0iLTIxIiByPSIxOSIvPgogICAgPHBhdGggZD0iTSAtODYgNTggTCAtMTAgLTEwIEwgNDMgMzEgTCA3NyA1IEwgOTEgNTggWiIvPgogIDwvZz4KICA8dGV4dCB4PSIzMDAiIHk9IjM5MSIgdGV4dC1hbmNob3I9Im1pZGRsZSIKICAgICAgICBmb250LWZhbWlseT0iTnVuaXRvLCBTZWdvZSBVSSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMzMiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNiOThhYTQiPtCk0L7RgtC+OiDQktC10YDQsDwvdGV4dD4KICA8dGV4dCB4PSIzMDAiIHk9IjQ0MSIgdGV4dC1hbmNob3I9Im1pZGRsZSIKICAgICAgICBmb250LWZhbWlseT0iTnVuaXRvLCBTZWdvZSBVSSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjAiIGZpbGw9IiNjOWE2YjgiPtC60LLQsNC00YDQsNGC0L3QvtC1IMK3IDYwMMOXNjAwPC90ZXh0Pgo8L3N2Zz4=' }
+  ];
+
+  // Любой мастер — вариант по умолчанию в форме записи
+  var ANY_MASTER = { id: 'any', name: 'Любой свободный мастер' };
+
+  var WORK = { open: 10, close: 21 };      // 10:00–21:00, последняя запись в 20:00
+  var STORAGE_KEY = 'avenue1618:bookings:v1';
+
+  var WEEK_DAYS = ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'];
+  var MONTHS = ['январь','февраль','март','апрель','май','июнь','июль','август','сентябрь','октябрь','ноябрь','декабрь'];
+  var MONTHS_OF = ['января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря'];
+
+  /* ---------------------------------------------------------------------------
+     2. Мелкие помощники
+     ------------------------------------------------------------------------ */
+
+  function $(sel, root) { return (root || document).querySelector(sel); }
+  function el(tag, cls, html) {
+    var node = document.createElement(tag);
+    if (cls) node.className = cls;
+    if (html != null) node.innerHTML = html;
+    return node;
+  }
+  function pad(n) { return n < 10 ? '0' + n : '' + n; }
+  function dateKey(d) { return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()); }
+  function startOfDay(d) { return new Date(d.getFullYear(), d.getMonth(), d.getDate()); }
+  function money(v) { return v.toLocaleString('ru-RU') + ' ₽'; }
+  function humanDate(d) {
+    return d.getDate() + ' ' + MONTHS_OF[d.getMonth()] + ', ' + WEEK_DAYS[d.getDay()];
+  }
+  function serviceById(id) {
+    for (var i = 0; i < SERVICES.length; i++) if (SERVICES[i].id === id) return SERVICES[i];
+    return null;
+  }
+  function masterById(id) {
+    if (id === ANY_MASTER.id) return ANY_MASTER;
+    for (var i = 0; i < MASTERS.length; i++) if (MASTERS[i].id === id) return MASTERS[i];
+    return ANY_MASTER;
+  }
+
+  // Стабильный псевдослучайный генератор: одна и та же дата всегда даёт
+  // одинаковую «занятость» — иначе демо мигало бы при каждом рендере.
+  function hash(str) {
+    var h = 2166136261;
+    for (var i = 0; i < str.length; i++) {
+      h ^= str.charCodeAt(i);
+      h = (h * 16777619) >>> 0;
+    }
+    return h;
+  }
+  function busyHours(key) {
+    var taken = {};
+    for (var hour = WORK.open; hour < WORK.close; hour++) {
+      // ~35% часов заняты, распределение зависит от даты и часа
+      if ((hash(key + ':' + hour) % 100) < 35) taken[hour] = true;
+    }
+    // выходные загружены сильнее
+    var d = parseKey(key);
+    if (d.getDay() === 0 || d.getDay() === 6) {
+      for (var hh = WORK.open; hh < WORK.close; hh++) {
+        if ((hash(key + '#' + hh) % 100) < 25) taken[hh] = true;
+      }
+    }
+    return taken;
+  }
+  function parseKey(key) {
+    var p = key.split('-');
+    return new Date(+p[0], +p[1] - 1, +p[2]);
+  }
+
+  /* ---------------------------------------------------------------------------
+     3. Хранилище записей
+     ------------------------------------------------------------------------ */
+
+  var store = {
+    all: function () {
+      try {
+        var raw = localStorage.getItem(STORAGE_KEY);
+        return raw ? JSON.parse(raw) : [];
+      } catch (e) { return []; }
+    },
+    save: function (list) {
+      try { localStorage.setItem(STORAGE_KEY, JSON.stringify(list)); } catch (e) { /* приватный режим */ }
+    },
+    add: function (booking) {
+      var list = store.all();
+      list.push(booking);
+      list.sort(function (a, b) { return (a.date + a.hour) < (b.date + b.hour) ? -1 : 1; });
+      store.save(list);
+    },
+    remove: function (id) {
+      store.save(store.all().filter(function (b) { return b.id !== id; }));
+    },
+    forDate: function (key) {
+      return store.all().filter(function (b) { return b.date === key; });
+    },
+    isMine: function (key, hour) {
+      return store.all().some(function (b) { return b.date === key && b.hour === hour; });
+    }
+  };
+
+  /* ---------------------------------------------------------------------------
+     4. Каталог услуг
+     ------------------------------------------------------------------------ */
+
+  var activeCat = 'all';
+
+  function renderTabs() {
+    var wrap = $('#tabs');
+    if (!wrap) return;
+    wrap.innerHTML = '';
+    CATEGORIES.forEach(function (cat) {
+      var btn = el('button', 'tab' + (cat.id === activeCat ? ' is-active' : ''), cat.title);
+      btn.type = 'button';
+      btn.setAttribute('role', 'tab');
+      btn.addEventListener('click', function () {
+        activeCat = cat.id;
+        renderTabs();
+        renderCatalog();
+      });
+      wrap.appendChild(btn);
+    });
+  }
+
+  function renderCatalog() {
+    var wrap = $('#catalog');
+    if (!wrap) return;
+    wrap.innerHTML = '';
+    SERVICES.filter(function (s) { return activeCat === 'all' || s.cat === activeCat; })
+      .forEach(function (s, i) {
+        var card = el('article', 'service');
+        card.style.animationDelay = (i * 0.05) + 's';
+        card.innerHTML =
+          '<div class="service-media">' +
+            '<img src="' + s.img + '" alt="' + s.title + '" loading="lazy">' +
+            '<span class="service-tag">' + s.tag + '</span>' +
+          '</div>' +
+          '<div class="service-body">' +
+            '<h3>' + s.title + '</h3>' +
+            '<p>' + s.desc + '</p>' +
+            '<div class="service-meta">' +
+              '<span class="service-price">' + money(s.price) + '<small>от · ' + s.dur + ' мин</small></span>' +
+              '<button type="button" class="btn btn-primary btn-sm" data-service="' + s.id + '">Записаться</button>' +
+            '</div>' +
+          '</div>';
+        card.querySelector('button').addEventListener('click', function () {
+          preselectedService = s.id;
+          var booking = $('#booking');
+          if (booking) booking.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          toast('Услуга «' + s.title + '» выбрана — осталось выбрать время ✨');
+        });
+        wrap.appendChild(card);
+      });
+  }
+
+  function renderMasters() {
+    var wrap = $('#mastersGrid');
+    if (!wrap) return;
+    wrap.innerHTML = '';
+    MASTERS.forEach(function (m) {
+      var card = el('article', 'master reveal');
+      card.innerHTML =
+        '<div class="master-photo"><img src="' + m.img + '" alt="' + m.name + '" loading="lazy"></div>' +
+        '<h3>' + m.name + '</h3>' +
+        '<div class="role">' + m.role + '</div>' +
+        '<p>' + m.exp + '</p>';
+      wrap.appendChild(card);
+    });
+  }
+
+  /* ---------------------------------------------------------------------------
+     5. Календарь
+     ------------------------------------------------------------------------ */
+
+  var today = startOfDay(new Date());
+  var viewMonth = new Date(today.getFullYear(), today.getMonth(), 1);
+  var selectedDate = new Date(today);
+  var preselectedService = null;
+
+  function freeCount(key) {
+    var taken = busyHours(key), free = 0;
+    var d = parseKey(key);
+    for (var h = WORK.open; h < WORK.close; h++) {
+      if (isPastHour(d, h)) continue;
+      if (taken[h] || store.isMine(key, h)) continue;
+      free++;
+    }
+    return free;
+  }
+
+  function isPastHour(d, hour) {
+    var now = new Date();
+    if (startOfDay(d).getTime() > startOfDay(now).getTime()) return false;
+    if (startOfDay(d).getTime() < startOfDay(now).getTime()) return true;
+    return hour <= now.getHours();
+  }
+
+  // Открываем календарь на ближайшем дне, где ещё есть свободные часы
+  function firstAvailableDate() {
+    var d = new Date(today);
+    for (var i = 0; i < 60; i++) {
+      if (freeCount(dateKey(d)) > 0) return d;
+      d = new Date(d.getFullYear(), d.getMonth(), d.getDate() + 1);
+    }
+    return new Date(today);
+  }
+
+  function renderCalendar() {
+    var grid = $('#calGrid'), label = $('#calMonth');
+    if (!grid) return;
+
+    label.textContent = MONTHS[viewMonth.getMonth()] + ' ' + viewMonth.getFullYear();
+    grid.innerHTML = '';
+
+    var first = new Date(viewMonth.getFullYear(), viewMonth.getMonth(), 1);
+    var offset = (first.getDay() + 6) % 7;            // неделя начинается с понедельника
+    var daysInMonth = new Date(viewMonth.getFullYear(), viewMonth.getMonth() + 1, 0).getDate();
+
+    for (var i = 0; i < offset; i++) grid.appendChild(el('div', 'cal-day is-empty'));
+
+    for (var day = 1; day <= daysInMonth; day++) {
+      var date = new Date(viewMonth.getFullYear(), viewMonth.getMonth(), day);
+      var key = dateKey(date);
+      var isPast = date.getTime() < today.getTime();
+      var free = isPast ? 0 : freeCount(key);
+
+      var btn = el('button', 'cal-day');
+      btn.type = 'button';
+      btn.innerHTML = day + '<small>' + (isPast ? '—' : free > 0 ? free + ' ч.' : 'нет мест') + '</small>';
+
+      if (date.getTime() === today.getTime()) btn.classList.add('is-today');
+      if (key === dateKey(selectedDate)) btn.classList.add('is-selected');
+      if (!isPast && free <= 3) btn.classList.add('is-busy');
+      if (store.forDate(key).length) btn.appendChild(el('span', 'dot'));
+
+
+      var hasMine = store.forDate(key).length > 0;
+      if (isPast || (free === 0 && !hasMine)) {
+        btn.disabled = true;
+      } else {
+        (function (d) {
+          btn.addEventListener('click', function () {
+            selectedDate = d;
+            renderCalendar();
+            renderSlots();
+          });
+        })(date);
+      }
+      grid.appendChild(btn);
+    }
+
+    // Назад в прошлое не листаем
+    var prev = $('#calPrev');
+    prev.disabled = viewMonth.getFullYear() === today.getFullYear() && viewMonth.getMonth() === today.getMonth();
+  }
+
+  /* ---------------------------------------------------------------------------
+     6. Часовые ячейки
+     ------------------------------------------------------------------------ */
+
+  function renderSlots() {
+    var wrap = $('#slots');
+    if (!wrap) return;
+
+    var key = dateKey(selectedDate);
+    var taken = busyHours(key);
+
+    $('#slotsDate').textContent = humanDate(selectedDate);
+    $('#slotsHint').textContent = 'Салон работает с ' + WORK.open + ':00 до ' + WORK.close +
+      ':00. Нажмите на свободный час, чтобы занять ячейку.';
+
+    wrap.innerHTML = '';
+    var free = 0, idx = 0;
+
+    for (var hour = WORK.open; hour < WORK.close; hour++) {
+      var mine = store.isMine(key, hour);
+      var past = isPastHour(selectedDate, hour);
+      var busy = taken[hour] && !mine;
+
+      var btn = el('button', 'slot');
+      btn.type = 'button';
+      btn.style.animationDelay = (idx++ * 0.03) + 's';
+      btn.innerHTML = pad(hour) + ':00' + '<small>' +
+        (mine ? 'вы записаны' : past ? 'прошло' : busy ? 'занято' : 'свободно') + '</small>';
+
+      if (mine) {
+        btn.classList.add('is-mine');
+        (function (h) {
+          btn.addEventListener('click', function () { cancelPrompt(key, h); });
+        })(hour);
+      } else if (past || busy) {
+        btn.classList.add('is-taken');
+        btn.disabled = true;
+      } else {
+        free++;
+        (function (h) {
+          btn.addEventListener('click', function () { openModal(selectedDate, h); });
+        })(hour);
+      }
+      wrap.appendChild(btn);
+    }
+
+    $('#slotsCount').textContent = free > 0 ? 'свободно: ' + free : 'всё занято';
+
+    if (!wrap.children.length) {
+      wrap.appendChild(el('div', 'slots-empty', 'На этот день записи нет 🌸'));
+    }
+    renderMyBookings();
+  }
+
+  function renderMyBookings() {
+    var wrap = $('#myBookings');
+    if (!wrap) return;
+    var list = store.all().filter(function (b) {
+      return parseKey(b.date).getTime() >= today.getTime();
+    });
+
+    if (!list.length) {
+      wrap.innerHTML = '<p class="empty-note">Пока пусто — самое время выбрать время 🩷</p>';
+      return;
+    }
+
+    wrap.innerHTML = '';
+    list.forEach(function (b) {
+      var svc = serviceById(b.service);
+      var item = el('div', 'booking-item');
+      item.innerHTML =
+        '<span><b>' + pad(b.hour) + ':00 · ' + humanDate(parseKey(b.date)) + '</b>' +
+        '<span>' + (svc ? svc.title : 'Услуга') + ' · ' + masterById(b.master).name + '</span></span>';
+      var cancel = el('button', null, 'отменить');
+      cancel.type = 'button';
+      cancel.addEventListener('click', function () {
+        store.remove(b.id);
+        toast('Запись отменена. Будем ждать в другой раз 🌷');
+        renderCalendar();
+        renderSlots();
+      });
+      item.appendChild(cancel);
+      wrap.appendChild(item);
+    });
+  }
+
+  function cancelPrompt(key, hour) {
+    var booking = store.forDate(key).filter(function (b) { return b.hour === hour; })[0];
+    if (!booking) return;
+    store.remove(booking.id);
+    toast('Запись на ' + pad(hour) + ':00 отменена 🌷');
+    renderCalendar();
+    renderSlots();
+  }
+
+  /* ---------------------------------------------------------------------------
+     7. Модальное окно записи
+     ------------------------------------------------------------------------ */
+
+  var modal = null;
+
+  function closeModal() {
+    if (!modal) return;
+    modal.remove();
+    modal = null;
+    document.body.style.overflow = '';
+    document.removeEventListener('keydown', onEsc);
+  }
+  function onEsc(e) { if (e.key === 'Escape') closeModal(); }
+
+  function openModal(date, hour) {
+    closeModal();
+
+    var options = SERVICES.map(function (s) {
+      return '<option value="' + s.id + '"' + (s.id === preselectedService ? ' selected' : '') + '>' +
+        s.title + ' — ' + money(s.price) + '</option>';
+    }).join('');
+
+    var masterOptions = '<option value="any">' + ANY_MASTER.name + '</option>' +
+      MASTERS.map(function (m) {
+        return '<option value="' + m.id + '">' + m.name + ' · ' + m.role + '</option>';
+      }).join('');
+
+    modal = el('div', 'modal');
+    modal.innerHTML =
+      '<div class="modal-card" role="dialog" aria-modal="true" aria-label="Запись в салон">' +
+        '<button class="modal-close" type="button" aria-label="Закрыть">✕</button>' +
+        '<h3>Записываемся ✨</h3>' +
+        '<p class="modal-sub">Проверьте детали и оставьте контакты — администратор подтвердит запись.</p>' +
+        '<div class="summary">' +
+          '<span class="chip">📅 ' + humanDate(date) + '</span>' +
+          '<span class="chip">🕰️ ' + pad(hour) + ':00</span>' +
+        '</div>' +
+        '<form id="bookingForm" novalidate>' +
+          '<div class="field"><label for="f-service">Услуга</label>' +
+            '<select id="f-service" name="service">' + options + '</select></div>' +
+          '<div class="field"><label for="f-master">Мастер</label>' +
+            '<select id="f-master" name="master">' + masterOptions + '</select></div>' +
+          '<div class="field-row">' +
+            '<div class="field"><label for="f-name">Ваше имя</label>' +
+              '<input id="f-name" name="name" type="text" placeholder="Анна" autocomplete="name" required></div>' +
+            '<div class="field"><label for="f-phone">Телефон</label>' +
+              '<input id="f-phone" name="phone" type="tel" placeholder="+7 900 000-00-00" autocomplete="tel" required></div>' +
+          '</div>' +
+          '<div class="field"><label for="f-note">Комментарий</label>' +
+            '<textarea id="f-note" name="note" placeholder="Например: хочу нежный нюд и снять прошлое покрытие"></textarea></div>' +
+          '<button class="btn btn-primary" type="submit" style="width:100%">Подтвердить запись 🩷</button>' +
+          '<p class="form-note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных. ' +
+          'В демо-версии заявка никуда не отправляется.</p>' +
+        '</form>' +
+      '</div>';
+
+    document.body.appendChild(modal);
+    document.body.style.overflow = 'hidden';
+    document.addEventListener('keydown', onEsc);
+
+    modal.querySelector('.modal-close').addEventListener('click', closeModal);
+    modal.addEventListener('click', function (e) { if (e.target === modal) closeModal(); });
+    setTimeout(function () { var n = $('#f-name'); if (n) n.focus(); }, 60);
+
+    $('#bookingForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var name = $('#f-name').value.trim();
+      var phone = $('#f-phone').value.trim();
+
+      if (name.length < 2) { toast('Как к вам обращаться? 🌸'); $('#f-name').focus(); return; }
+      if (phone.replace(/\D/g, '').length < 10) { toast('Проверьте номер телефона 📞'); $('#f-phone').focus(); return; }
+
+      var booking = {
+        id: 'b' + Date.now() + Math.floor(Math.random() * 1000),
+        date: dateKey(date),
+        hour: hour,
+        service: $('#f-service').value,
+        master: $('#f-master').value,
+        name: name,
+        phone: phone,
+        note: $('#f-note').value.trim(),
+        createdAt: new Date().toISOString()
+      };
+
+      store.add(booking);
+      sendToManager(booking);
+      showSuccess(booking);
+      renderCalendar();
+      renderSlots();
+    });
+  }
+
+  function showSuccess(booking) {
+    if (!modal) return;
+    var svc = serviceById(booking.service);
+    modal.querySelector('.modal-card').innerHTML =
+      '<button class="modal-close" type="button" aria-label="Закрыть">✕</button>' +
+      '<div class="success">' +
+        '<span class="emoji">🎀</span>' +
+        '<h3>Вы записаны!</h3>' +
+        '<p class="modal-sub">' + humanDate(parseKey(booking.date)) + ', ' + pad(booking.hour) + ':00<br>' +
+          (svc ? svc.title : '') + ' · ' + masterById(booking.master).name + '</p>' +
+        '<div class="tg-note" style="text-align:left">' +
+          '<b>Что дальше:</b> заявка отправлена администратору в Telegram-бота. ' +
+          'Он свяжется с вами по номеру ' + booking.phone + ' и подтвердит время.' +
+        '</div>' +
+        '<button class="btn btn-primary" type="button" id="successOk" style="width:100%;margin-top:20px">Хорошо ☁️</button>' +
+      '</div>';
+    modal.querySelector('.modal-close').addEventListener('click', closeModal);
+    $('#successOk').addEventListener('click', closeModal);
+    toast('Запись создана — ждём вас в 1618 Avenue 🩷');
+  }
+
+  /* ---------------------------------------------------------------------------
+     8. Интерфейсные мелочи
+     ------------------------------------------------------------------------ */
+
+  var toastTimer = null;
+  function toast(text) {
+    var t = $('#toast');
+    if (!t) return;
+    t.textContent = text;
+    t.classList.add('is-visible');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { t.classList.remove('is-visible'); }, 3600);
+  }
+
+  function initHeader() {
+    var header = $('#header'), burger = $('#burger'), nav = $('#nav');
+    window.addEventListener('scroll', function () {
+      header.classList.toggle('is-stuck', window.scrollY > 12);
+    }, { passive: true });
+
+    if (burger) {
+      burger.addEventListener('click', function () {
+        var open = nav.classList.toggle('is-open');
+        burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+      nav.addEventListener('click', function (e) {
+        if (e.target.tagName === 'A') {
+          nav.classList.remove('is-open');
+          burger.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+  }
+
+  function initReveal() {
+    var items = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) {
+      items.forEach(function (i) { i.classList.add('is-in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    items.forEach(function (i) { io.observe(i); });
+  }
+
+  function initSparkles() {
+    var hero = $('.hero');
+    if (!hero) return;
+    for (var i = 0; i < 12; i++) {
+      var s = el('span', 'sparkle');
+      s.style.left = (Math.random() * 96 + 2) + '%';
+      s.style.top = (Math.random() * 88 + 6) + '%';
+      s.style.animationDelay = (Math.random() * 3.4) + 's';
+      s.style.transform = 'scale(' + (0.5 + Math.random()) + ')';
+      hero.appendChild(s);
+    }
+  }
+
+  /* ---------------------------------------------------------------------------
+     9. Точка интеграции с Telegram-ботом
+     ------------------------------------------------------------------------
+     Пока лендинг демонстрационный, заявка просто пишется в консоль.
+     Чтобы включить отправку менеджеру:
+       1) поднять небольшой backend (или serverless-функцию), который знает
+          BOT_TOKEN и CHAT_ID менеджера и дёргает Telegram Bot API;
+       2) указать его адрес в TELEGRAM.endpoint и выставить enabled = true.
+     Токен бота в коде страницы держать нельзя — только на сервере.
+     ------------------------------------------------------------------------ */
+
+  var TELEGRAM = {
+    enabled: false,
+    endpoint: ''   // например: 'https://api.1618avenue.ru/booking'
+  };
+
+  function bookingToText(b) {
+    var svc = serviceById(b.service);
+    return [
+      '🎀 Новая запись — 1618 Avenue',
+      '📅 ' + humanDate(parseKey(b.date)) + ', ' + pad(b.hour) + ':00',
+      '💅 ' + (svc ? svc.title + ' (' + money(svc.price) + ', ' + svc.dur + ' мин)' : b.service),
+      '👩‍🎨 Мастер: ' + masterById(b.master).name,
+      '👤 ' + b.name,
+      '📞 ' + b.phone,
+      b.note ? '📝 ' + b.note : ''
+    ].filter(Boolean).join('\n');
+  }
+
+  function sendToManager(booking) {
+    var payload = { booking: booking, text: bookingToText(booking) };
+
+    if (!TELEGRAM.enabled || !TELEGRAM.endpoint) {
+      console.info('[1618 Avenue · демо] Заявка, которая уйдёт в Telegram-бота:\n' + payload.text);
+      return Promise.resolve({ ok: true, demo: true });
+    }
+
+    return fetch(TELEGRAM.endpoint, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    }).catch(function (err) {
+      console.warn('Не удалось отправить заявку менеджеру:', err);
+      return { ok: false };
+    });
+  }
+
+  /* ---------------------------------------------------------------------------
+     10. Старт
+     ------------------------------------------------------------------------ */
+
+  function init() {
+    selectedDate = firstAvailableDate();
+    viewMonth = new Date(selectedDate.getFullYear(), selectedDate.getMonth(), 1);
+
+    renderTabs();
+    renderCatalog();
+    renderMasters();
+    renderCalendar();
+    renderSlots();
+    initHeader();
+    initReveal();
+    initSparkles();
+
+    $('#calPrev').addEventListener('click', function () {
+      viewMonth = new Date(viewMonth.getFullYear(), viewMonth.getMonth() - 1, 1);
+      renderCalendar();
+    });
+    $('#calNext').addEventListener('click', function () {
+      viewMonth = new Date(viewMonth.getFullYear(), viewMonth.getMonth() + 1, 1);
+      renderCalendar();
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+
+</script>
+</body>
+</html>

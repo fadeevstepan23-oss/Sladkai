@@ -208,6 +208,7 @@ section { position: relative; }
 }
 
 .logo {
+  flex: 0 0 auto;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -227,9 +228,26 @@ section { position: relative; }
   font-size: 1.1rem;
 }
 
+.demo-chip {
+  flex: 0 0 auto;
+  font-family: var(--font-body);
+  font-size: .62rem;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--rose-deep);
+  background: var(--pink-100);
+  border: 1px solid var(--pink-200);
+  border-radius: 999px;
+  padding: 3px 9px;
+  align-self: center;
+  margin-right: auto;
+}
+
 .nav { display: flex; align-items: center; gap: 26px; }
 .nav a {
   font-size: .92rem;
+  white-space: nowrap;
   font-weight: 600;
   color: var(--ink);
   opacity: .78;
@@ -859,6 +877,7 @@ section { position: relative; }
   .nav { display: none; }
   .burger { display: flex; }
   .header-phone { display: none; }
+  .nav.is-open a { white-space: normal; }
   .nav.is-open {
     display: flex;
     position: absolute; left: 16px; right: 16px; top: 74px;
