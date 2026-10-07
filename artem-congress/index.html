@@ -1,0 +1,943 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Субаренда коммерческой недвижимости — Артём Панасенко</title>
+<meta name="description" content="Черновик презентации для доклада на конгрессе: новое направление — субаренда коммерческой недвижимости в Москве и Санкт&#8209;Петербурге.">
+<link rel="stylesheet" href="assets/css/deck.css">
+<link rel="stylesheet" href="assets/css/slides.css">
+</head>
+<body>
+
+<!-- Общие определения для чертежей -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#7A746C" stroke-width="1"/>
+    </pattern>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+      <path d="M0 1 L9 5 L0 9" fill="none" stroke="#46423D" stroke-width="1.2"/>
+    </marker>
+  </defs>
+</svg>
+
+<main class="deck" id="deck">
+
+<!-- ============================================================
+     00 · ОТКРЫТИЕ
+     ============================================================ -->
+
+<!-- 01 · Титул -->
+<section class="slide s-cover" data-section="Доклад" data-title="Титул">
+  <div class="frame">
+    <div class="cover-text">
+      <div class="eyebrow r">Всероссийский жилищный конгресс · <span class="todo">город, дата</span></div>
+      <h1 class="h-xl r">Субаренда коммерческой недвижимости</h1>
+      <p class="lead r">Как за год запустить 10+ объектов в&nbsp;Москве и&nbsp;Санкт&#8209;Петербурге — и&nbsp;как это повторить</p>
+      <div class="cover-who r">
+        <div class="h3">Артём Панасенко</div>
+        <div class="cap">Девелопер, инвестор, основатель ГК «Премьер»</div>
+      </div>
+    </div>
+    <svg class="plan cover-plan" viewBox="-60 -60 760 600" aria-label="План помещения 120 м², разделённого на три блока">
+      <polygon class="room fi" style="--i:16" points="0,70 190,70 190,0 321,0 321,400 0,400"/>
+      <polygon class="room b fi" style="--i:18" points="321,0 496,0 496,400 321,400"/>
+      <polygon class="room fi" style="--i:20" points="496,0 600,0 600,327 496,327"/>
+      <rect class="hatch fi" style="--i:20" x="496" y="327" width="104" height="73"/>
+      <path class="wall ln" style="--i:1" d="M0 70H190V0H600V400H0Z"/>
+      <path class="part ln" style="--i:10" d="M321 0V400"/>
+      <path class="part ln" style="--i:12" d="M496 0V400"/>
+      <path class="part ln" style="--i:14" d="M496 327H600"/>
+      <!-- окна по фасаду -->
+      <rect class="gap" x="140" y="396" width="150" height="8"/><path class="thin" d="M140 397.5H290M140 402.5H290"/>
+      <rect class="gap" x="360" y="396" width="110" height="8"/><path class="thin" d="M360 397.5H470M360 402.5H470"/>
+      <!-- двери: у каждого блока свой вход -->
+      <rect class="gap" x="40" y="395" width="48" height="10"/><path class="thin ln" style="--i:16" d="M40 400V352A48 48 0 0 1 88 400"/>
+      <rect class="gap" x="400" y="395" width="44" height="10" /><path class="thin ln" style="--i:18" d="M444 400V356A44 44 0 0 0 400 400"/>
+      <rect class="gap" x="595" y="120" width="10" height="44"/><path class="thin ln" style="--i:20" d="M600 120H556A44 44 0 0 0 600 164"/>
+      <text class="lbl fi" style="--i:20" x="160" y="250" text-anchor="middle">61 м²</text>
+      <text class="lbl-s fi" style="--i:21" x="160" y="278" text-anchor="middle">БЛОК А</text>
+      <text class="lbl fi" style="--i:22" x="408" y="220" text-anchor="middle">37 м²</text>
+      <text class="lbl-s fi" style="--i:23" x="408" y="248" text-anchor="middle">БЛОК Б</text>
+      <text class="lbl fi" style="--i:24" x="548" y="170" text-anchor="middle">18 м²</text>
+      <text class="lbl-s fi" style="--i:25" x="548" y="198" text-anchor="middle">БЛОК В</text>
+      <!-- размерные линии -->
+      <path class="hair ln" style="--i:6" d="M0 460H600M0 450V470M600 450V470"/>
+      <text class="dim fi" style="--i:8" x="300" y="492" text-anchor="middle">13 800</text>
+      <path class="hair ln" style="--i:7" d="M650 0V400M640 0H660M640 400H660"/>
+      <text class="dim fi" style="--i:8" x="672" y="204" transform="rotate(90 672 204)" text-anchor="middle">9 200</text>
+      <text class="dim fi" style="--i:9" x="0" y="-26">ПЛАН · М 1:100 · 120 М²</text>
+    </svg>
+  </div>
+  <aside class="note"><p>Открытие. Тема новая даже для профессионалов рынка — поэтому сначала коротко о себе, затем направление, модель, команда, кейсы и приглашение.</p></aside>
+</section>
+
+<!-- 02 · О чём доклад -->
+<section class="slide s-agenda" data-section="Доклад" data-title="О чём поговорим">
+  <div class="frame">
+    <div class="agenda-head">
+      <div class="eyebrow r">Содержание</div>
+      <h2 class="h1 r">О чём поговорим</h2>
+      <p class="body r muted">Тема новая — поэтому идём от&nbsp;опыта к&nbsp;цифрам и&nbsp;к&nbsp;тому, как это повторить.</p>
+    </div>
+    <ol class="lines agenda-list">
+      <li class="r"><span class="n">01</span><span class="h3">Кто я и с чем пришёл</span><span class="cap">лист 03</span></li>
+      <li class="r"><span class="n">02</span><span class="h3">Новое направление — субаренда</span><span class="cap">лист 11</span></li>
+      <li class="r"><span class="n">03</span><span class="h3">Как устроен бизнес</span><span class="cap">лист 15</span></li>
+      <li class="r"><span class="n">04</span><span class="h3">Команда и принципы</span><span class="cap">лист 20</span></li>
+      <li class="r"><span class="n">05</span><span class="h3">Кейсы: пять объектов в цифрах</span><span class="cap">лист 23</span></li>
+      <li class="r"><span class="n">06</span><span class="h3">Как мы открываем объект</span><span class="cap">лист 33</span></li>
+      <li class="r"><span class="n">07</span><span class="h3">Бизнес-ужин и личный интенсив</span><span class="cap">лист 37</span></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============================================================
+     01 · КТО Я
+     ============================================================ -->
+
+<!-- 03 · Раздел -->
+<section class="slide dark divider" data-section="01 — Кто я" data-title="Раздел 01 · Кто я">
+  <div class="frame">
+    <div class="div-num r fade">01</div>
+    <div class="div-text">
+      <h2 class="h-xl r">Кто я</h2>
+      <p class="lead r">Для тех, кто видит меня впервые: чем занимался до&nbsp;субаренды и&nbsp;во&nbsp;что верю</p>
+    </div>
+    <svg class="plan div-plan" data-split="1"></svg>
+  </div>
+</section>
+
+<!-- 04 · Артём Панасенко -->
+<section class="slide s-me" data-section="01 — Кто я" data-title="Артём Панасенко">
+  <figure class="ph bw me-photo r reveal"><img src="assets/img/artem.jpg" alt="Артём Панасенко"></figure>
+  <div class="me-text">
+    <div class="eyebrow r">Спикер</div>
+    <h2 class="h1 r">Артём Панасенко</h2>
+    <p class="lead r">Строю, инвестирую и&nbsp;учу. В&nbsp;недвижимости — с&nbsp;2015&nbsp;года.</p>
+    <dl class="roles">
+      <div class="r"><dt class="cap">Domian</dt><dd>Собственник 5 офисов франшизы, 150 сотрудников</dd></div>
+      <div class="r"><dt class="cap">ГК «Премьер»</dt><dd>Основатель строительно-инвестиционной компании</dd></div>
+      <div class="r"><dt class="cap">«Инвелион»</dt><dd>Президент ассоциации инвесторов и&nbsp;участников нацпроектов</dd></div>
+      <div class="r"><dt class="cap">«Инвестор PRO»</dt><dd>Автор курса для специалистов рынка и&nbsp;инвесторов</dd></div>
+      <div class="r"><dt class="cap">Клуб «Деньги»</dt><dd>Резидент</dd></div>
+      <div class="r"><dt class="cap">Сцена</dt><dd>Спикер и&nbsp;наставник</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- 05 · Путь -->
+<section class="slide s-path" data-section="01 — Кто я" data-title="Путь: 2015 → 2025">
+  <div class="frame">
+    <div class="eyebrow r">Путь</div>
+    <h2 class="h1 r">Десять лет в недвижимости — пять&nbsp;шагов</h2>
+    <svg class="path-line" viewBox="0 0 1640 40" preserveAspectRatio="none">
+      <path class="ln" style="--i:3" d="M0 20H1640" stroke="var(--line-2)" stroke-width="1" fill="none"/>
+    </svg>
+    <ol class="path">
+      <li class="r"><i></i><div class="num num-s">2015</div><div class="h4">Домиан</div><p class="small">Франшиза крупной сети агентств Юга&nbsp;России: 5&nbsp;офисов, 150&nbsp;сотрудников</p></li>
+      <li class="r"><i></i><div class="num num-s">2019</div><div class="h4">Премьер</div><p class="small">ИЖС, коммерческие объекты, готовый арендный бизнес</p></li>
+      <li class="r"><i></i><div class="num num-s">2023</div><div class="h4">Инвелион</div><p class="small">Ассоциация инвесторов: гранты, субсидии, финансирование бизнеса</p></li>
+      <li class="r"><i></i><div class="num num-s todo">20__</div><div class="h4">Инвестор PRO</div><p class="small">Курс и практикум на проектах Москвы: ГАБ, ИЖС, МКД</p></li>
+      <li class="r last"><i></i><div class="num num-s">2025</div><div class="h4">Субаренда</div><p class="small">Новое направление: коммерческие помещения в&nbsp;Москве и&nbsp;Петербурге</p></li>
+    </ol>
+  </div>
+  <aside class="note"><p>Уточнить год запуска «Инвестор PRO» и месяц старта субаренды.</p></aside>
+</section>
+
+<!-- 06 · Домиан -->
+<section class="slide s-domian" data-section="01 — Кто я" data-title="Домиан">
+  <div class="frame">
+    <div class="dom-text">
+      <div class="eyebrow r">С 2015 года</div>
+      <h2 class="h1 r">Домиан</h2>
+      <p class="lead r">Крупная сеть агентств недвижимости на&nbsp;Юге России. Я&nbsp;— собственник пяти офисов франшизы.</p>
+      <div class="cells c2 dom-cells">
+        <div class="r"><div class="num num-m"><span class="count" data-to="5">5</span></div><div class="cap">офисов под моим управлением</div></div>
+        <div class="r"><div class="num num-m"><span class="count" data-to="150">150</span></div><div class="cap">сотрудников</div></div>
+        <div class="r"><div class="num num-m"><span class="count" data-to="87">87</span></div><div class="cap">офисов в сети · 8 городов</div></div>
+        <div class="r"><div class="num num-m"><span class="count" data-to="7">7</span><span class="unit">раз</span></div><div class="cap">франшизное подразделение — лучшее</div></div>
+      </div>
+    </div>
+    <figure class="ph bw dom-photo r reveal"><img src="assets/img/domian.jpg" alt="Артём Панасенко в офисе Домиан"></figure>
+  </div>
+  <aside class="note"><p>В старой презентации два значения размера сети: «87 офисов в 8 городах» и «84 офиса, 2000+ сотрудников». Уточнить актуальное.</p></aside>
+</section>
+
+<!-- 07 · Премьер в цифрах -->
+<section class="slide s-premier" data-section="01 — Кто я" data-title="Премьер в цифрах">
+  <div class="frame">
+    <div class="prem-head">
+      <div>
+        <div class="eyebrow r">ГК «Премьер» · с 2019 года</div>
+        <h2 class="h1 r">Премьер в цифрах</h2>
+      </div>
+      <p class="body r muted">Строительно-инвестиционная компания: ИЖС, коммерческие объекты, готовый арендный бизнес. Данные на&nbsp;2025&nbsp;год.</p>
+    </div>
+    <div class="cells c3 prem-cells">
+      <div class="r"><div class="num num-l"><span class="count" data-to="120">120</span>+</div><div class="cap">млн ₽ собственных средств<br>фонд PREMIER</div></div>
+      <div class="r"><div class="num num-l"><span class="count" data-to="210">210</span>+</div><div class="cap">млн ₽ привлечено<br>от инвесторов</div></div>
+      <div class="r"><div class="num num-l"><span class="count" data-to="180">180</span>+</div><div class="cap">млн ₽ банковского<br>финансирования</div></div>
+      <div class="r"><div class="num num-l"><span class="count" data-to="40">40</span>+</div><div class="cap">реализованных<br>проектов</div></div>
+      <div class="r"><div class="num num-l"><span class="count" data-to="8">8</span><span class="unit">мес</span></div><div class="cap">средняя длительность<br>проекта</div></div>
+      <div class="r"><div class="num num-l"><span class="count" data-to="32">32</span><span class="unit">%</span></div><div class="cap">годовых — пассивный доход<br>наших инвесторов</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 08 · Проекты -->
+<section class="slide s-projects" data-section="01 — Кто я" data-title="Что мы строили">
+  <div class="frame">
+    <div class="eyebrow r">Портфель</div>
+    <h2 class="h1 r">Что мы строили и&nbsp;запускали</h2>
+    <div class="g4 proj">
+      <article>
+        <figure class="ph mute r reveal"><img src="assets/img/proj-village.jpg" alt="Коттеджный посёлок"></figure>
+        <div class="cap r">ИЖС</div>
+        <div class="h4 r">Коттеджные посёлки</div>
+        <p class="small r">Нектарин, Щепкин сквер, Лазурный — Ростов-на-Дону. 50&nbsp;лет Октября — Батайск. Мечта — Москва</p>
+      </article>
+      <article>
+        <figure class="ph mute r reveal"><img src="assets/img/proj-zolotoy.jpg" alt="ЖК Золотой"></figure>
+        <div class="cap r">Жилой дом</div>
+        <div class="h4 r">ЖК «Золотой», Ростов-на-Дону</div>
+        <p class="small r">450&nbsp;млн&nbsp;₽ инвестиций — вместе с&nbsp;девелоперами и&nbsp;банкирами южной столицы</p>
+      </article>
+      <article>
+        <figure class="ph mute r reveal"><img src="assets/img/proj-gab.jpg" alt="Готовый арендный бизнес"></figure>
+        <div class="cap r">ГАБ</div>
+        <div class="h4 r">Готовый арендный бизнес</div>
+        <p class="small r">Первые этажи в&nbsp;новостройках Москвы и&nbsp;МО, строительство и&nbsp;реконструкция под&nbsp;сетевых арендаторов</p>
+      </article>
+      <article>
+        <figure class="ph mute r reveal"><img src="assets/img/proj-flip.jpg" alt="Флиппинг в Москве"></figure>
+        <div class="cap r">Флиппинг</div>
+        <div class="h4 r">Квартиры в Москве</div>
+        <p class="small r">Коллективные инвестиции от&nbsp;3&nbsp;млн&nbsp;₽</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 09 · Среда -->
+<section class="slide s-community" data-section="01 — Кто я" data-title="Сообщество">
+  <div class="frame">
+    <div class="comm-text">
+      <div class="eyebrow r">Среда</div>
+      <h2 class="h1 r">Сообщество, в&nbsp;котором я&nbsp;расту</h2>
+      <ol class="lines comm-list">
+        <li class="r"><span class="n">2023</span><span><span class="h4">«Инвелион»</span><br><span class="small muted">Президент ассоциации инвесторов и&nbsp;участников национальных проектов</span></span><span></span></li>
+        <li class="r"><span class="n">—</span><span><span class="h4">Клуб «Деньги»</span><br><span class="small muted">Резидент предпринимательского клуба</span></span><span></span></li>
+        <li class="r"><span class="n">—</span><span><span class="h4">Всероссийский жилищный конгресс</span><br><span class="small muted">Спикер деловой программы</span></span><span></span></li>
+        <li class="r"><span class="n">—</span><span><span class="h4">Бизнес-завтраки и&nbsp;инфо-туры</span><br><span class="small muted">Встречи инвесторов и&nbsp;выезды на&nbsp;объекты</span></span><span></span></li>
+      </ol>
+    </div>
+    <figure class="ph bw comm-a r reveal"><img src="assets/img/speaker.jpg" alt="Выступление"></figure>
+    <figure class="ph bw comm-b r reveal"><img src="assets/img/invelion.jpg" alt="Встреча ассоциации Инвелион"></figure>
+  </div>
+</section>
+
+<!-- 10 · Ценности -->
+<section class="slide s-values" data-section="01 — Кто я" data-title="Мои ценности">
+  <div class="frame">
+    <div class="val-head">
+      <div>
+        <div class="eyebrow r">Во что я верю</div>
+        <h2 class="h1 r">Мои ценности</h2>
+      </div>
+      <span class="todo-tag r">Черновик — сформулировать вместе с Артёмом</span>
+    </div>
+    <div class="g4 vals">
+      <div class="r"><div class="cap">01</div><div class="h3">Цифры прежде решений</div><p class="small">Каждый проект начинается с&nbsp;финмодели, а&nbsp;не&nbsp;с&nbsp;вдохновения</p></div>
+      <div class="r"><div class="cap">02</div><div class="h3">Долгий горизонт</div><p class="small">Договоры на&nbsp;7–10&nbsp;лет и&nbsp;отношения с&nbsp;партнёрами на&nbsp;годы</p></div>
+      <div class="r"><div class="cap">03</div><div class="h3">Делиться опытом</div><p class="small">Рынок растёт, когда растут люди в&nbsp;нём</p></div>
+      <div class="r"><div class="cap">04</div><div class="h3">Команда и семья</div><p class="small">Результат всегда командный, а&nbsp;энергию дают близкие и&nbsp;спорт</p></div>
+    </div>
+    <div class="life">
+      <figure class="ph bw r reveal"><img src="assets/img/life-family.jpg" alt=""></figure>
+      <figure class="ph bw r reveal"><img src="assets/img/life-tennis.jpg" alt=""></figure>
+      <figure class="ph bw r reveal"><img src="assets/img/life-ski.jpg" alt=""></figure>
+      <figure class="ph bw r reveal"><img src="assets/img/life-golf.jpg" alt=""></figure>
+    </div>
+  </div>
+  <aside class="note"><p>Ценности в голосовом названы, но не перечислены. Здесь — предложение на основе прошлых материалов; Артёму нужно подтвердить или переписать.</p></aside>
+</section>
+
+<!-- ============================================================
+     02 · НОВОЕ НАПРАВЛЕНИЕ
+     ============================================================ -->
+
+<!-- 11 · Раздел -->
+<section class="slide dark divider" data-section="02 — Новое направление" data-title="Раздел 02 · Новое направление">
+  <div class="frame">
+    <div class="div-num r fade">02</div>
+    <div class="div-text">
+      <h2 class="h-xl r">Новое направление</h2>
+      <p class="lead r">Субаренда коммерческой недвижимости. Москва и&nbsp;Санкт&#8209;Петербург</p>
+    </div>
+    <svg class="plan div-plan" data-split="2"></svg>
+  </div>
+</section>
+
+<!-- 12 · Почему субаренда -->
+<section class="slide s-why" data-section="02 — Новое направление" data-title="Почему субаренда">
+  <div class="frame">
+    <div class="why-head">
+      <div>
+        <div class="eyebrow r">Почему субаренда</div>
+        <h2 class="h1 r">Арендный бизнес без&nbsp;покупки объекта</h2>
+      </div>
+      <p class="body r muted">Сравнение на&nbsp;цифрах наших собственных проектов</p>
+    </div>
+    <div class="cmp">
+      <div class="cmp-row cmp-h r"><span></span><span class="cap">Готовый арендный бизнес</span><span class="cap acc">Субаренда</span></div>
+      <div class="cmp-row r"><span class="cap">Пример</span><span class="h4 muted">«Пятёрочка», Зверево</span><span class="h4">Садовая, Санкт&#8209;Петербург</span></div>
+      <div class="cmp-row r"><span class="cap">Вход</span><span class="num num-s muted">15 <span class="unit">млн ₽</span></span><span class="num num-s">153–239 <span class="unit">тыс. ₽</span></span></div>
+      <div class="cmp-row r"><span class="cap">Доходность</span><span class="num num-s muted">20 <span class="unit">% годовых</span></span><span class="num num-s">от 100 <span class="unit">% годовых на капитал</span></span></div>
+      <div class="cmp-row r"><span class="cap">Окупаемость</span><span class="num num-s muted">5 <span class="unit">лет</span></span><span class="num num-s">1–3 <span class="unit">месяца</span></span></div>
+      <div class="cmp-row r"><span class="cap">Объект</span><span class="small muted">В собственности: покупка 3,7&nbsp;млн + ремонт 11,3&nbsp;млн</span><span class="small">В долгосрочной аренде на&nbsp;7–10&nbsp;лет, без покупки</span></div>
+    </div>
+    <div class="why-foot r"><span class="todo-tag">Проверить формулировки</span><span class="cap">Субаренда — по финмодели Садовой: три сценария, вложения за вычетом депозитов арендаторов</span></div>
+  </div>
+</section>
+
+<!-- 13 · Год в субаренде -->
+<section class="slide s-year" data-section="02 — Новое направление" data-title="Год в субаренде">
+  <div class="frame">
+    <div class="eyebrow r">Итоги</div>
+    <h2 class="h1 r">Меньше чем за год</h2>
+    <div class="cells c4 year-cells">
+      <div class="r"><div class="num num-xl"><span class="count" data-to="10">10</span>+</div><div class="h4">объектов</div><p class="small muted">запущено в&nbsp;субаренду</p></div>
+      <div class="r"><div class="num num-xl"><span class="count" data-to="2">2</span></div><div class="h4">города</div><p class="small muted">Москва и&nbsp;Санкт&#8209;Петербург</p></div>
+      <div class="r"><div class="num num-xl">&lt;<span class="count" data-to="12">12</span></div><div class="h4">месяцев</div><p class="small muted">от первого объекта <span class="todo">месяц старта</span></p></div>
+      <div class="r"><div class="num num-xl"><span class="count" data-to="18">18</span></div><div class="h4">арендаторов</div><p class="small muted">в пяти разобранных кейсах</p></div>
+    </div>
+    <div class="year-foot r"><span class="num num-m"><span class="count" data-to="611000">611 000</span> <span class="unit">₽ в месяц</span></span><span class="body">суммарный доход пяти объектов, разобранных в&nbsp;кейсах</span><span class="cap" style="margin-left:auto">расчёт по данным кейсов</span></div>
+  </div>
+</section>
+
+<!-- 14 · География -->
+<section class="slide s-geo" data-section="02 — Новое направление" data-title="Где мы работаем">
+  <div class="frame">
+    <div class="eyebrow r">География</div>
+    <h2 class="h1 r">Две столицы</h2>
+    <div class="g2 geo">
+      <div>
+        <div class="geo-city r"><span class="h2">Санкт&#8209;Петербург</span><span class="cap">59°57′ с.ш. · 30°19′ в.д.</span></div>
+        <ul class="lines geo-list">
+          <li class="r"><span class="n">01</span><span class="h4">ул. Садовая</span><span class="cap">109 м² · 2 арендатора</span></li>
+          <li class="r"><span class="n">02</span><span class="h4">ул. Восстания</span><span class="cap">158,4 м² · 3 арендатора</span></li>
+          <li class="r more"><span class="n">+</span><span class="small todo">ещё объекты в Петербурге — список</span><span></span></li>
+        </ul>
+      </div>
+      <div>
+        <div class="geo-city r"><span class="h2">Москва</span><span class="cap">55°45′ с.ш. · 37°37′ в.д.</span></div>
+        <ul class="lines geo-list">
+          <li class="r"><span class="n">03</span><span class="h4">ул. Буданова</span><span class="cap">124,3 м² · 4 арендатора</span></li>
+          <li class="r"><span class="n">04</span><span class="h4">Ленинский проспект</span><span class="cap">99,2 м² · 5 арендаторов</span></li>
+          <li class="r"><span class="n">05</span><span class="h4">ул. Юлиана Семёнова</span><span class="cap">126,4 м² · 4 арендатора</span></li>
+          <li class="r more"><span class="n">+</span><span class="small todo">ещё объекты в Москве — список</span><span></span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     03 · КАК УСТРОЕН БИЗНЕС
+     ============================================================ -->
+
+<!-- 15 · Раздел -->
+<section class="slide dark divider" data-section="03 — Как устроен бизнес" data-title="Раздел 03 · Как устроен бизнес">
+  <div class="frame">
+    <div class="div-num r fade">03</div>
+    <div class="div-text">
+      <h2 class="h-xl r">Как устроен бизнес</h2>
+      <p class="lead r">Модель, деление площади и&nbsp;движение денег</p>
+    </div>
+    <svg class="plan div-plan" data-split="3"></svg>
+  </div>
+</section>
+
+<!-- 16 · Модель в трёх шагах -->
+<section class="slide s-model" data-section="03 — Как устроен бизнес" data-title="Модель в трёх шагах">
+  <div class="frame">
+    <div class="eyebrow r">Модель</div>
+    <h2 class="h1 r">Три шага</h2>
+    <div class="g3 steps">
+      <div>
+        <svg class="plan step-ico" viewBox="-6 -6 252 172"><path class="wall ln" style="--i:3" d="M0 0H240V160H0Z"/></svg>
+        <div class="num num-s r">01</div>
+        <div class="h3 r">Снимаем</div>
+        <p class="body r">Помещение 100–300&nbsp;м² в&nbsp;долгосрочную аренду. Ставка ниже рыночной, условия и&nbsp;срок фиксируем в&nbsp;договоре.</p>
+      </div>
+      <div>
+        <svg class="plan step-ico" viewBox="-6 -6 252 172"><path class="wall ln" style="--i:5" d="M0 0H240V160H0Z"/><path class="part ln" style="--i:9" d="M110 0V160M110 90H240"/></svg>
+        <div class="num num-s r">02</div>
+        <div class="h3 r">Делим</div>
+        <p class="body r">На&nbsp;блоки 30–50–70&nbsp;м² и&nbsp;адаптируем под спрос района: отдельные входы, витрины, коммуникации.</p>
+      </div>
+      <div>
+        <svg class="plan step-ico" viewBox="-6 -6 252 172"><polygon class="room fi" style="--i:12" points="0,0 110,0 110,160 0,160"/><polygon class="room b fi" style="--i:13" points="110,0 240,0 240,90 110,90"/><path class="wall ln" style="--i:7" d="M0 0H240V160H0Z"/><path class="part ln" style="--i:10" d="M110 0V160M110 90H240"/></svg>
+        <div class="num num-s r">03</div>
+        <div class="h3 r">Сдаём</div>
+        <p class="body r">Каждому арендатору — свой формат. Ставка от&nbsp;3&nbsp;000&nbsp;₽/м² против 2&nbsp;000&nbsp;₽/м² у&nbsp;собственника. Разница — наш доход.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 17 · Деление -->
+<section class="slide s-split" data-section="03 — Как устроен бизнес" data-title="Деление площади">
+  <div class="frame">
+    <div class="eyebrow r">Ключевая механика</div>
+    <h2 class="h1 r">Один метр — две ставки</h2>
+    <div class="split">
+      <div class="split-col">
+        <div class="cap r">До · одно помещение</div>
+        <svg class="plan" viewBox="-30 -30 660 480">
+          <polygon class="room fi" style="--i:8" points="0,70 190,70 190,0 600,0 600,400 0,400"/>
+          <path class="wall ln" style="--i:2" d="M0 70H190V0H600V400H0Z"/>
+          <rect class="gap" x="40" y="395" width="48" height="10"/><path class="thin ln" style="--i:6" d="M40 400V352A48 48 0 0 1 88 400"/>
+          <text class="lbl fi" style="--i:9" x="380" y="215" text-anchor="middle" font-size="44">120 м²</text>
+        </svg>
+        <dl class="split-dl r"><div><dt class="cap">Площадь</dt><dd class="h3">100–300 м²</dd></div><div><dt class="cap">Ставка собственника</dt><dd class="h3">от 2 000 ₽/м²</dd></div></dl>
+      </div>
+      <svg class="split-arrow fi" style="--i:10" viewBox="0 0 120 20"><path class="ln" style="--i:10" d="M0 10H112" stroke="var(--ink-2)" stroke-width="1.2" fill="none" marker-end="url(#arr)"/></svg>
+      <div class="split-col">
+        <div class="cap r">После · три блока</div>
+        <svg class="plan" viewBox="-30 -30 660 480">
+          <polygon class="room fi" style="--i:20" points="0,70 190,70 190,0 321,0 321,400 0,400"/>
+          <polygon class="room b fi" style="--i:22" points="321,0 496,0 496,400 321,400"/>
+          <polygon class="room fi" style="--i:24" points="496,0 600,0 600,327 496,327"/>
+          <rect class="hatch fi" style="--i:24" x="496" y="327" width="104" height="73"/>
+          <path class="wall ln" style="--i:11" d="M0 70H190V0H600V400H0Z"/>
+          <path class="part ln" style="--i:15" d="M321 0V400"/>
+          <path class="part ln" style="--i:17" d="M496 0V400"/>
+          <path class="part ln" style="--i:18" d="M496 327H600"/>
+          <rect class="gap" x="40" y="395" width="48" height="10"/><path class="thin ln" style="--i:20" d="M40 400V352A48 48 0 0 1 88 400"/>
+          <rect class="gap" x="400" y="395" width="44" height="10"/><path class="thin ln" style="--i:22" d="M444 400V356A44 44 0 0 0 400 400"/>
+          <rect class="gap" x="595" y="120" width="10" height="44"/><path class="thin ln" style="--i:24" d="M600 120H556A44 44 0 0 0 600 164"/>
+          <text class="lbl fi" style="--i:22" x="160" y="250" text-anchor="middle">61 м²</text>
+          <text class="lbl fi" style="--i:24" x="408" y="215" text-anchor="middle">37 м²</text>
+          <text class="lbl fi" style="--i:26" x="548" y="170" text-anchor="middle">18 м²</text>
+        </svg>
+        <dl class="split-dl r"><div><dt class="cap">Блоки</dt><dd class="h3">30–50–70 м²</dd></div><div><dt class="cap">Ставка для арендаторов</dt><dd class="h3">от 3 000 ₽/м²</dd></div></dl>
+      </div>
+    </div>
+  </div>
+  <aside class="note"><p>Схема перерисована с прежнего слайда: 120 м² → 61 + 37 + 18 м² (вариант Б того же помещения: 61 + 59 м²).</p></aside>
+</section>
+
+<!-- 18 · Движение денег -->
+<section class="slide s-money" data-section="03 — Как устроен бизнес" data-title="Как движутся деньги">
+  <div class="frame">
+    <div class="eyebrow r">Экономика</div>
+    <h2 class="h1 r">Как движутся деньги</h2>
+    <div class="money">
+      <div class="m-node r"><div class="cap">Субарендаторы</div><div class="h3">2–5 блоков</div><p class="small muted">аптека, кофейня, цветы, ПВЗ, услуги</p></div>
+      <div class="m-arrow"><svg class="fi" style="--i:4" viewBox="0 0 220 20"><path class="ln" style="--i:4" d="M0 10H212" stroke="var(--ink-2)" stroke-width="1.2" fill="none" marker-end="url(#arr)"/></svg><span class="cap r">аренда от 3 000 ₽/м²</span></div>
+      <div class="m-node m-us r"><div class="cap">Мы</div><div class="h3">Управляющий арендатор</div><p class="small muted">ремонт, деление, поиск арендаторов, сервис</p></div>
+      <div class="m-arrow"><svg class="fi" style="--i:7" viewBox="0 0 220 20"><path class="ln" style="--i:7" d="M0 10H212" stroke="var(--ink-2)" stroke-width="1.2" fill="none" marker-end="url(#arr)"/></svg><span class="cap r">фиксированный платёж</span></div>
+      <div class="m-node r"><div class="cap">Собственник</div><div class="h3">Один надёжный арендатор</div><p class="small muted">стабильный платёж на&nbsp;7–10 лет и&nbsp;обновлённое помещение</p></div>
+    </div>
+    <div class="cells c3 money-cells">
+      <div class="r"><div class="num num-m">30–50<span class="unit">%</span></div><div class="cap">маржинальность объекта</div></div>
+      <div class="r"><div class="num num-m">от 100<span class="unit">%</span></div><div class="cap">годовых на вложенный капитал</div></div>
+      <div class="r"><div class="num num-m">7–10<span class="unit">лет</span></div><div class="cap">срок договора с собственником</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 19 · Кто арендаторы -->
+<section class="slide s-tenants" data-section="03 — Как устроен бизнес" data-title="Кто арендует блоки">
+  <div class="frame">
+    <div class="ten-head">
+      <div>
+        <div class="eyebrow r">Спрос</div>
+        <h2 class="h1 r">Кто арендует блоки</h2>
+      </div>
+      <p class="body r muted">18 арендаторов в&nbsp;пяти кейсах. Малый формат и&nbsp;ежедневный спрос — то, что нужно жителям улицы.</p>
+    </div>
+    <div class="ten">
+      <div class="ten-g" style="--n:6">
+        <div class="ten-top r"><span class="num num-m">6</span><span class="h4">Еда и напитки</span></div>
+        <div class="units"><i class="fi"></i><i class="fi"></i><i class="fi"></i><i class="fi"></i><i class="fi"></i><i class="fi"></i></div>
+        <p class="small r">Кофейни и&nbsp;кофе-стойка · 3<br>Кафе-шаурма · 1<br>Пиво · 1<br>Овощи и&nbsp;фрукты · 1</p>
+      </div>
+      <div class="ten-g" style="--n:5">
+        <div class="ten-top r"><span class="num num-m">5</span><span class="h4">Здоровье и красота</span></div>
+        <div class="units"><i class="fi"></i><i class="fi"></i><i class="fi"></i><i class="fi"></i><i class="fi"></i></div>
+        <p class="small r">Аптеки · 2<br>Эпиляция и&nbsp;лазерная эпиляция · 2<br>Массаж · 1</p>
+      </div>
+      <div class="ten-g" style="--n:4">
+        <div class="ten-top r"><span class="num num-m">4</span><span class="h4">Цветы и подарки</span></div>
+        <div class="units"><i class="fi"></i><i class="fi"></i><i class="fi"></i><i class="fi"></i></div>
+        <p class="small r">Цветы · 3<br>Сувениры · 1</p>
+      </div>
+      <div class="ten-g" style="--n:3">
+        <div class="ten-top r"><span class="num num-m">3</span><span class="h4">Сервисы</span></div>
+        <div class="units"><i class="fi"></i><i class="fi"></i><i class="fi"></i></div>
+        <p class="small r">Прачечная · 1<br>Ателье · 1<br>Пункт выдачи Ozon · 1</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     04 · КОМАНДА И ПРИНЦИПЫ
+     ============================================================ -->
+
+<!-- 20 · Раздел -->
+<section class="slide dark divider" data-section="04 — Команда и принципы" data-title="Раздел 04 · Команда и принципы">
+  <div class="frame">
+    <div class="div-num r fade">04</div>
+    <div class="div-text">
+      <h2 class="h-xl r">Команда и&nbsp;принципы</h2>
+      <p class="lead r">Кто делает объекты и&nbsp;по&nbsp;каким правилам</p>
+    </div>
+    <svg class="plan div-plan" data-split="4"></svg>
+  </div>
+</section>
+
+<!-- 21 · Команда -->
+<section class="slide s-team" data-section="04 — Команда и принципы" data-title="Команда">
+  <figure class="ph bw team-photo r reveal"><img src="assets/img/team.jpg" alt="Команда"></figure>
+  <div class="team-text">
+    <div class="eyebrow r">Команда</div>
+    <h2 class="h1 r">Пять ролей на&nbsp;каждый объект</h2>
+    <ol class="lines team-list">
+      <li class="r"><span class="n">01</span><span class="h4">Поиск и анализ помещений</span><span class="cap todo">имя</span></li>
+      <li class="r"><span class="n">02</span><span class="h4">Переговоры и договоры</span><span class="cap todo">имя</span></li>
+      <li class="r"><span class="n">03</span><span class="h4">Ремонт и деление</span><span class="cap todo">имя</span></li>
+      <li class="r"><span class="n">04</span><span class="h4">Поиск арендаторов</span><span class="cap todo">имя</span></li>
+      <li class="r"><span class="n">05</span><span class="h4">Управление объектами</span><span class="cap todo">имя</span></li>
+    </ol>
+    <span class="todo-tag r">Фото команды субаренды и имена — уточнить</span>
+  </div>
+  <aside class="note"><p>Фото — из прошлой презентации «Премьер». Если у направления субаренды своя команда, нужно новое фото и состав ролей.</p></aside>
+</section>
+
+<!-- 22 · Принципы -->
+<section class="slide s-principles" data-section="04 — Команда и принципы" data-title="Принципы работы">
+  <div class="frame">
+    <div class="pr-head">
+      <div>
+        <div class="eyebrow r">Правила</div>
+        <h2 class="h1 r">Принципы работы</h2>
+      </div>
+      <span class="todo-tag r">Черновик — согласовать</span>
+    </div>
+    <div class="cells c3 pr-cells">
+      <div class="r"><div class="cap">01</div><div class="h3">Сначала цифры</div><p class="small">Финмодель в&nbsp;трёх сценариях — до&nbsp;подписания договора</p></div>
+      <div class="r"><div class="cap">02</div><div class="h3">Длинный договор</div><p class="small">7–10 лет, ставка и&nbsp;условия зафиксированы</p></div>
+      <div class="r"><div class="cap">03</div><div class="h3">Несколько арендаторов</div><p class="small">Риск распределён: один съехал — объект продолжает работать</p></div>
+      <div class="r"><div class="cap">04</div><div class="h3">Под спрос улицы</div><p class="small">Деление и&nbsp;подбор арендаторов — под трафик конкретного места</p></div>
+      <div class="r"><div class="cap">05</div><div class="h3">Честно с собственником</div><p class="small">Стабильный платёж и&nbsp;порядок в&nbsp;помещении весь срок договора</p></div>
+      <div class="r"><div class="cap">06</div><div class="h3 todo">Принцип Артёма</div><p class="small">Личное правило, которое отличает нашу команду</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     05 · КЕЙСЫ
+     ============================================================ -->
+
+<!-- 23 · Раздел -->
+<section class="slide dark divider" data-section="05 — Кейсы" data-title="Раздел 05 · Кейсы">
+  <div class="frame">
+    <div class="div-num r fade">05</div>
+    <div class="div-text">
+      <h2 class="h-xl r">Кейсы</h2>
+      <p class="lead r">Пять объектов из&nbsp;10+. Москва и&nbsp;Санкт&#8209;Петербург</p>
+    </div>
+    <svg class="plan div-plan" data-split="5"></svg>
+  </div>
+</section>
+
+<!-- 24 · Сводная таблица -->
+<section class="slide s-table" data-section="05 — Кейсы" data-title="Пять объектов: сводная таблица">
+  <div class="frame">
+    <div class="eyebrow r">Сводка</div>
+    <h2 class="h1 r">Пять объектов в&nbsp;одной таблице</h2>
+    <table class="tbl tab">
+      <thead class="r">
+        <tr><th>№</th><th>Объект</th><th class="rt">Площадь, м²</th><th class="rt">Договор</th><th class="rt">Собственнику, ₽/мес</th><th class="rt">Доход, ₽/мес</th><th class="rt">Арендаторы</th></tr>
+      </thead>
+      <tbody>
+        <tr class="r"><td class="cap">01</td><td>Санкт-Петербург, ул. Садовая</td><td class="rt">109,0</td><td class="rt">10 лет</td><td class="rt">180 000</td><td class="rt">130 000</td><td class="rt">2</td></tr>
+        <tr class="r"><td class="cap">02</td><td>Санкт-Петербург, ул. Восстания</td><td class="rt">158,4</td><td class="rt">10 лет</td><td class="rt">370 000</td><td class="rt">133 000</td><td class="rt">3</td></tr>
+        <tr class="r"><td class="cap">03</td><td>Москва, ул. Буданова</td><td class="rt">124,3</td><td class="rt">7 лет</td><td class="rt">286 000</td><td class="rt">120 000</td><td class="rt">4</td></tr>
+        <tr class="r"><td class="cap">04</td><td>Москва, Ленинский пр-т</td><td class="rt">99,2</td><td class="rt">10 лет</td><td class="rt">265 000</td><td class="rt">114 000</td><td class="rt">5</td></tr>
+        <tr class="r"><td class="cap">05</td><td>Москва, ул. Юлиана Семёнова</td><td class="rt">126,4</td><td class="rt">10 лет</td><td class="rt">250 000</td><td class="rt">114 000</td><td class="rt">4</td></tr>
+      </tbody>
+      <tfoot class="r">
+        <tr><td></td><td>Итого</td><td class="rt">617,3</td><td class="rt">7–10 лет</td><td class="rt">1 351 000</td><td class="rt">611 000</td><td class="rt">18</td></tr>
+      </tfoot>
+    </table>
+  </div>
+</section>
+
+<!-- 25 · Кейс 01 · Садовая -->
+<section class="slide s-case s-case-photo" data-section="05 — Кейсы" data-title="Кейс 01 · Садовая">
+  <div class="frame">
+    <div class="case-text">
+      <div class="eyebrow r">Кейс 01 · Санкт&#8209;Петербург</div>
+      <h2 class="h1 r">ул. Садовая</h2>
+      <div class="cells c2 case-cells">
+        <div class="r"><div class="cap">Площадь</div><div class="num num-s">109 <span class="unit">м²</span></div></div>
+        <div class="r"><div class="cap">Договор</div><div class="num num-s">10 <span class="unit">лет</span></div></div>
+        <div class="r"><div class="cap">Собственнику в месяц</div><div class="num num-s">180 000 <span class="unit">₽</span></div></div>
+        <div class="r"><div class="cap">Доход в месяц</div><div class="num num-s">130 000 <span class="unit">₽</span></div></div>
+      </div>
+      <div class="flow r" data-pay="180000" data-inc="130000"></div>
+      <div class="case-ten r"><span class="cap">Арендаторы</span><div class="chips"><span class="chip">Цветы</span><span class="chip">Аптека</span></div></div>
+    </div>
+    <div class="case-photos">
+      <figure class="ph mute r reveal cp-a"><img src="assets/img/sadovaya-facade.jpg" alt="Фасад, ул. Садовая"><figcaption>Фасад · угол Садовой</figcaption></figure>
+      <figure class="ph mute r reveal cp-b"><img src="assets/img/sadovaya-interior.jpg" alt="Помещение до ремонта"><figcaption>Помещение до ремонта</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- 26 · Садовая: деление и сценарии -->
+<section class="slide s-model-a" data-section="05 — Кейсы" data-title="Садовая: финмодель">
+  <div class="frame">
+    <div class="eyebrow r">Разбор кейса 01 · как считаем до подписания</div>
+    <h2 class="h1 r">Садовая: деление и&nbsp;три сценария</h2>
+    <div class="ma">
+      <div class="ma-plan">
+        <svg class="plan" viewBox="-30 -40 680 520">
+          <polygon class="room fi" style="--i:12" points="0,0 300,0 380,170 300,230 300,440 0,440"/>
+          <polygon class="room b fi" style="--i:14" points="300,230 380,170 600,270 540,440 345,440 345,380 300,380"/>
+          <rect class="hatch fi" style="--i:14" x="300" y="380" width="45" height="60"/>
+          <path class="wall ln" style="--i:2" d="M0 0H300L380 170L600 270L540 440H0Z"/>
+          <path class="part ln" style="--i:6" d="M0 230H190M250 230H300L380 170"/>
+          <path class="part ln" style="--i:8" d="M300 230V440M300 380H345V440"/>
+          <rect class="gap" x="100" y="435" width="46" height="10"/><path class="thin ln" style="--i:10" d="M100 440V394A46 46 0 0 1 146 440"/>
+          <rect class="gap" x="420" y="435" width="46" height="10"/><path class="thin ln" style="--i:12" d="M466 440V394A46 46 0 0 0 420 440"/>
+          <text class="lbl fi" style="--i:14" x="150" y="350" text-anchor="middle">75 м²</text>
+          <text class="lbl fi" style="--i:16" x="460" y="335" text-anchor="middle">32 м²</text>
+          <text class="dim fi" style="--i:10" x="0" y="-18">СХЕМА · 109 М² · УГЛОВОЕ ПОМЕЩЕНИЕ</text>
+        </svg>
+        <dl class="ma-in">
+          <div class="r"><dt class="cap">Аренда</dt><dd>180 000 ₽/мес · 1 651 ₽/м²</dd></div>
+          <div class="r"><dt class="cap">Мощность</dt><dd>20 кВт</dd></div>
+          <div class="r"><dt class="cap">Каникулы</dt><dd>2 месяца на ремонт</dd></div>
+          <div class="r"><dt class="cap">Договор</dt><dd>10 лет</dd></div>
+        </dl>
+      </div>
+      <table class="tbl sc tab">
+        <thead class="r"><tr><th></th><th class="rt">Позитивный</th><th class="rt">Средний</th><th class="rt">Худший</th></tr></thead>
+        <tbody>
+          <tr class="r"><td>Ставка блока 75 м², ₽/м²</td><td class="rt">2 500</td><td class="rt">2 300</td><td class="rt">2 100</td></tr>
+          <tr class="r"><td>Ставка блока 32 м², ₽/м²</td><td class="rt">3 400</td><td class="rt">3 200</td><td class="rt">3 000</td></tr>
+          <tr class="r"><td>Аренда от блоков, ₽/мес</td><td class="rt">296 300</td><td class="rt">274 900</td><td class="rt">253 500</td></tr>
+          <tr class="r"><td>Доход, ₽/мес</td><td class="rt">116 300</td><td class="rt">94 900</td><td class="rt">73 500</td></tr>
+          <tr class="r"><td>Маржинальность</td><td class="rt">39%</td><td class="rt">35%</td><td class="rt">29%</td></tr>
+        </tbody>
+        <tfoot class="r"><tr><td>Факт, ₽/мес</td><td class="rt acc" colspan="3">130 000 — выше позитивного сценария</td></tr></tfoot>
+      </table>
+    </div>
+  </div>
+  <aside class="note"><p>Цифры — из финмодели «Деление 2» (прошлая презентация, лист 20) и из файла кейсов (факт 130 000 ₽). Уточнить у Артёма: факт — это стабильный ежемесячный доход сейчас?</p></aside>
+</section>
+
+<!-- 27 · Садовая: вложения -->
+<section class="slide s-model-b" data-section="05 — Кейсы" data-title="Садовая: сколько своих денег">
+  <div class="frame">
+    <div class="eyebrow r">Разбор кейса 01 · вход в объект</div>
+    <h2 class="h1 r">Сколько своих денег нужно</h2>
+    <div class="mb">
+      <div class="mb-list">
+        <div class="cap r">Стартовые расходы</div>
+        <ul class="bars">
+          <li class="r"><span>Аренда, первый месяц</span><span class="bar"><i class="grow" style="width:100%"></i></span><span class="tab">180 000</span></li>
+          <li class="r"><span>Залог собственнику</span><span class="bar"><i class="grow" style="width:100%"></i></span><span class="tab">180 000</span></li>
+          <li class="r"><span>Ремонт: электрика, сантехника, стены</span><span class="bar"><i class="grow" style="width:67.1%"></i></span><span class="tab">120 800</span></li>
+          <li class="r"><span>Материалы</span><span class="bar"><i class="grow" style="width:52.9%"></i></span><span class="tab">95 200</span></li>
+          <li class="r"><span>Реклама на Авито</span><span class="bar"><i class="grow" style="width:50%"></i></span><span class="tab">90 000</span></li>
+          <li class="r"><span>Прочие расходы</span><span class="bar"><i class="grow" style="width:44.4%"></i></span><span class="tab">80 000</span></li>
+          <li class="r total"><span>Итого</span><span></span><span class="tab">746 000</span></li>
+        </ul>
+      </div>
+      <div class="mb-eq">
+        <div class="eq r"><span class="cap">Стартовые расходы</span><span class="num num-s tab">746 000 <span class="unit">₽</span></span></div>
+        <div class="eq r"><span class="cap">Первая аренда и залоги арендаторов</span><span class="num num-s tab">− 592 600 <span class="unit">₽</span></span></div>
+        <div class="eq eq-res r"><span class="cap">Собственные вложения</span><span class="num num-m tab">153 400 <span class="unit">₽</span></span></div>
+        <div class="mb-foot r">
+          <div><div class="cap">Окупаемость</div><div class="h3">1–3 месяца</div></div>
+          <div><div class="cap">Вложения в худшем сценарии</div><div class="h3">239 000 ₽</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <aside class="note"><p>Позитивный сценарий: 746 000 − 296 300 (первая аренда) − 296 300 (залоги) = 153 400 ₽. Средний — 196 200 ₽, худший — 239 000 ₽.</p></aside>
+</section>
+
+<!-- 28 · Кейс 02 · Восстания -->
+<section class="slide s-case s-case-l" data-section="05 — Кейсы" data-title="Кейс 02 · Восстания">
+  <div class="frame">
+    <div class="slot case-slot r fade"><span>Фото объекта · ул. Восстания<br>из папки «Фото объектов»</span></div>
+    <div class="case-text">
+      <div class="eyebrow r">Кейс 02 · Санкт&#8209;Петербург</div>
+      <h2 class="h1 r">ул. Восстания</h2>
+      <div class="cells c2 case-cells">
+        <div class="r"><div class="cap">Площадь</div><div class="num num-s">158,4 <span class="unit">м²</span></div></div>
+        <div class="r"><div class="cap">Договор</div><div class="num num-s">10 <span class="unit">лет</span></div></div>
+        <div class="r"><div class="cap">Собственнику в месяц</div><div class="num num-s">370 000 <span class="unit">₽</span></div></div>
+        <div class="r"><div class="cap">Доход в месяц</div><div class="num num-s">133 000 <span class="unit">₽</span></div></div>
+      </div>
+      <div class="flow r" data-pay="370000" data-inc="133000"></div>
+      <div class="case-ten r"><span class="cap">Арендаторы</span><div class="chips"><span class="chip">Сувениры</span><span class="chip">Цветы</span><span class="chip">Аптека</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 29 · Кейс 03 · Буданова -->
+<section class="slide s-case" data-section="05 — Кейсы" data-title="Кейс 03 · Буданова">
+  <div class="frame">
+    <div class="case-text">
+      <div class="eyebrow r">Кейс 03 · Москва</div>
+      <h2 class="h1 r">ул. Буданова</h2>
+      <div class="cells c2 case-cells">
+        <div class="r"><div class="cap">Площадь</div><div class="num num-s">124,3 <span class="unit">м²</span></div></div>
+        <div class="r"><div class="cap">Договор</div><div class="num num-s">7 <span class="unit">лет</span></div></div>
+        <div class="r"><div class="cap">Собственнику в месяц</div><div class="num num-s">286 000 <span class="unit">₽</span></div></div>
+        <div class="r"><div class="cap">Доход в месяц</div><div class="num num-s">120 000 <span class="unit">₽</span></div></div>
+      </div>
+      <div class="flow r" data-pay="286000" data-inc="120000"></div>
+      <div class="case-ten r"><span class="cap">Арендаторы</span><div class="chips"><span class="chip">Пиво</span><span class="chip">Прачечная</span><span class="chip">Кофейня</span><span class="chip">Массаж</span></div></div>
+    </div>
+    <div class="slot case-slot r fade"><span>Фото объекта · ул. Буданова<br>из папки «Фото объектов»</span></div>
+  </div>
+</section>
+
+<!-- 30 · Кейс 04 · Ленинский -->
+<section class="slide s-case s-case-l" data-section="05 — Кейсы" data-title="Кейс 04 · Ленинский проспект">
+  <div class="frame">
+    <div class="slot case-slot r fade"><span>Фото объекта · Ленинский пр-т<br>из папки «Фото объектов»</span></div>
+    <div class="case-text">
+      <div class="eyebrow r">Кейс 04 · Москва</div>
+      <h2 class="h1 r">Ленинский проспект</h2>
+      <div class="cells c2 case-cells">
+        <div class="r"><div class="cap">Площадь</div><div class="num num-s">99,2 <span class="unit">м²</span></div></div>
+        <div class="r"><div class="cap">Договор</div><div class="num num-s">10 <span class="unit">лет</span></div></div>
+        <div class="r"><div class="cap">Собственнику в месяц</div><div class="num num-s">265 000 <span class="unit">₽</span></div></div>
+        <div class="r"><div class="cap">Доход в месяц</div><div class="num num-s">114 000 <span class="unit">₽</span></div></div>
+      </div>
+      <div class="flow r" data-pay="265000" data-inc="114000"></div>
+      <div class="case-ten r"><span class="cap">Арендаторы</span><div class="chips"><span class="chip">Цветы</span><span class="chip">Ателье</span><span class="chip">Ozon</span><span class="chip">Овощи и фрукты</span><span class="chip">Кофе-стойка</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 31 · Кейс 05 · Юлиана Семёнова -->
+<section class="slide s-case" data-section="05 — Кейсы" data-title="Кейс 05 · Юлиана Семёнова">
+  <div class="frame">
+    <div class="case-text">
+      <div class="eyebrow r">Кейс 05 · Москва</div>
+      <h2 class="h1 r">ул. Юлиана Семёнова</h2>
+      <div class="cells c2 case-cells">
+        <div class="r"><div class="cap">Площадь</div><div class="num num-s">126,4 <span class="unit">м²</span></div></div>
+        <div class="r"><div class="cap">Договор</div><div class="num num-s">10 <span class="unit">лет</span></div></div>
+        <div class="r"><div class="cap">Собственнику в месяц</div><div class="num num-s">250 000 <span class="unit">₽</span></div></div>
+        <div class="r"><div class="cap">Доход в месяц</div><div class="num num-s">114 000 <span class="unit">₽</span></div></div>
+      </div>
+      <div class="flow r" data-pay="250000" data-inc="114000"></div>
+      <div class="case-ten r"><span class="cap">Арендаторы</span><div class="chips"><span class="chip">Кафе-шаурма</span><span class="chip">Эпиляция</span><span class="chip">Лазерная эпиляция</span><span class="chip">Кофейня</span></div></div>
+    </div>
+    <div class="slot case-slot r fade"><span>Фото объекта · ул. Юлиана Семёнова<br>из папки «Фото объектов»</span></div>
+  </div>
+</section>
+
+<!-- 32 · Итог по кейсам -->
+<section class="slide s-chart" data-section="05 — Кейсы" data-title="Итог по пяти кейсам">
+  <div class="frame">
+    <div class="eyebrow r">Итог по кейсам</div>
+    <h2 class="h1 r">Сколько платим и&nbsp;сколько остаётся</h2>
+    <div class="ch">
+      <div class="ch-plot">
+        <div class="legend r"><span><i style="background:var(--bronze)"></i>Платёж собственнику</span><span><i style="background:var(--accent)"></i>Наш доход</span><span class="cap">₽ в месяц</span></div>
+        <div class="chart" id="chart-cases" data-noclick></div>
+      </div>
+      <div class="ch-side">
+        <div class="r"><div class="num num-m"><span class="count" data-to="611">611</span><span class="unit">тыс. ₽</span></div><div class="cap">доход в месяц по пяти объектам</div></div>
+        <div class="r"><div class="num num-m"><span class="count" data-to="7.3" data-dec="1">7,3</span><span class="unit">млн ₽</span></div><div class="cap">в год при текущих арендаторах (расчёт)</div></div>
+        <div class="r"><div class="num num-m"><span class="count" data-to="617">617</span><span class="unit">м²</span></div><div class="cap">общая площадь пяти объектов</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     06 · КАК МЫ ОТКРЫВАЕМ ОБЪЕКТ
+     ============================================================ -->
+
+<!-- 33 · Раздел -->
+<section class="slide dark divider" data-section="06 — Как мы открываем" data-title="Раздел 06 · Как мы открываем объект">
+  <div class="frame">
+    <div class="div-num r fade">06</div>
+    <div class="div-text">
+      <h2 class="h-xl r">Как мы открываем объект</h2>
+      <p class="lead r">От поиска помещения до&nbsp;первого платежа арендаторов</p>
+    </div>
+    <svg class="plan div-plan" data-split="6"></svg>
+  </div>
+</section>
+
+<!-- 34 · Процесс -->
+<section class="slide s-process" data-section="06 — Как мы открываем" data-title="Семь этапов запуска">
+  <div class="frame">
+    <div class="eyebrow r">Процесс</div>
+    <h2 class="h1 r">Семь этапов запуска</h2>
+    <svg class="proc-line" viewBox="0 0 1640 20" preserveAspectRatio="none"><path class="ln" style="--i:3" d="M0 10H1640" stroke="var(--ink)" stroke-width="1" fill="none"/></svg>
+    <ol class="proc">
+      <li class="r"><i></i><span class="cap">01</span><div class="h4">Поиск помещения</div><p class="small">100–300 м², первый этаж, трафик</p><span class="cap todo">срок</span></li>
+      <li class="r"><i></i><span class="cap">02</span><div class="h4">Трафик и финмодель</div><p class="small">Считаем людей в&nbsp;час и&nbsp;три сценария дохода</p><span class="cap todo">срок</span></li>
+      <li class="r"><i></i><span class="cap">03</span><div class="h4">Переговоры</div><p class="small">Ставка, срок 7–10 лет, каникулы на&nbsp;ремонт</p><span class="cap todo">срок</span></li>
+      <li class="r"><i></i><span class="cap">04</span><div class="h4">Проект деления</div><p class="small">Блоки 30–70 м², входы, мощность</p><span class="cap todo">срок</span></li>
+      <li class="r"><i></i><span class="cap">05</span><div class="h4">Ремонт</div><p class="small">Электрика, сантехника, перегородки</p><span class="cap todo">срок</span></li>
+      <li class="r"><i></i><span class="cap">06</span><div class="h4">Арендаторы</div><p class="small">Реклама, показы, договоры и&nbsp;залоги</p><span class="cap todo">срок</span></li>
+      <li class="r"><i></i><span class="cap">07</span><div class="h4">Управление</div><p class="small">Платежи, сервис, замена арендаторов</p><span class="cap">весь срок</span></li>
+    </ol>
+  </div>
+</section>
+
+<!-- 35 · Чек-лист помещения -->
+<section class="slide s-check" data-section="06 — Как мы открываем" data-title="Какое помещение мы ищем">
+  <div class="frame">
+    <div class="ck-head">
+      <div>
+        <div class="eyebrow r">Чек-лист</div>
+        <h2 class="h1 r">Какое помещение мы&nbsp;ищем</h2>
+      </div>
+      <span class="todo-tag r">Черновик — дополнить критериями Артёма</span>
+    </div>
+    <div class="cells c3 ck-cells">
+      <div class="r"><div class="cap">К-01 · Площадь</div><div class="h3">100–300 м²</div><p class="small">Достаточно, чтобы разделить на&nbsp;2–5 блоков</p></div>
+      <div class="r"><div class="cap">К-02 · Этаж</div><div class="h3">Первый, с витринами</div><p class="small">Возможность сделать отдельные входы</p></div>
+      <div class="r"><div class="cap">К-03 · Трафик</div><div class="h3">Пешеходный поток</div><p class="small">Считаем людей в&nbsp;час до&nbsp;переговоров</p></div>
+      <div class="r"><div class="cap">К-04 · Мощность</div><div class="h3">От 20 кВт</div><p class="small">Хватает кофейне, прачечной, кабинетам услуг</p></div>
+      <div class="r"><div class="cap">К-05 · Ставка</div><div class="h3">Ниже рынка</div><p class="small">Около 2&nbsp;000 ₽/м² при рынке малых блоков от&nbsp;3&nbsp;000 ₽/м²</p></div>
+      <div class="r"><div class="cap">К-06 · Договор</div><div class="h3">От 7 лет</div><p class="small">Плюс арендные каникулы на&nbsp;ремонт — 1–2 месяца</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 36 · Риски -->
+<section class="slide s-risks" data-section="06 — Как мы открываем" data-title="Риски и решения">
+  <div class="frame">
+    <div class="rk-head">
+      <div>
+        <div class="eyebrow r">Риски</div>
+        <h2 class="h1 r">Что может пойти не&nbsp;так</h2>
+      </div>
+      <span class="todo-tag r">Черновик — проверить с Артёмом</span>
+    </div>
+    <div class="rk">
+      <div class="rk-row rk-h r"><span class="cap">Риск</span><span></span><span class="cap">Как закрываем</span></div>
+      <div class="rk-row r"><span class="h3">Блок простаивает</span><svg viewBox="0 0 80 20"><path d="M0 10H72" stroke="var(--ink-3)" stroke-width="1.2" fill="none" marker-end="url(#arr)"/></svg><span class="body">Несколько арендаторов на&nbsp;объекте и&nbsp;заложенный в&nbsp;модель худший сценарий</span></div>
+      <div class="rk-row r"><span class="h3">Арендатор съехал</span><svg viewBox="0 0 80 20"><path d="M0 10H72" stroke="var(--ink-3)" stroke-width="1.2" fill="none" marker-end="url(#arr)"/></svg><span class="body">Залог на&nbsp;стороне арендатора и&nbsp;постоянный поток заявок через рекламу</span></div>
+      <div class="rk-row r"><span class="h3">Собственник поднимает ставку</span><svg viewBox="0 0 80 20"><path d="M0 10H72" stroke="var(--ink-3)" stroke-width="1.2" fill="none" marker-end="url(#arr)"/></svg><span class="body">Ставка и&nbsp;срок зафиксированы в&nbsp;договоре на&nbsp;7–10 лет</span></div>
+      <div class="rk-row r"><span class="h3">Ремонт дороже плана</span><svg viewBox="0 0 80 20"><path d="M0 10H72" stroke="var(--ink-3)" stroke-width="1.2" fill="none" marker-end="url(#arr)"/></svg><span class="body">Смета до&nbsp;подписания и&nbsp;каникулы на&nbsp;время ремонта</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     07 · ПРИГЛАШЕНИЕ
+     ============================================================ -->
+
+<!-- 37 · Место для брокера -->
+<section class="slide s-brokers" data-section="07 — Присоединяйтесь" data-title="Где здесь место для вас">
+  <div class="frame">
+    <div class="br-head">
+      <div>
+        <div class="eyebrow r">Для риэлторов и брокеров</div>
+        <h2 class="h1 r">Где здесь место для&nbsp;вас</h2>
+      </div>
+      <span class="todo-tag r">Предложение — обсудить условия</span>
+    </div>
+    <div class="g4 br">
+      <div class="r"><div class="num num-s">01</div><div class="h3">Приведите помещение</div><p class="small">Знаете собственника с&nbsp;подходящей площадью — обсудим объект вместе</p><span class="cap todo">вознаграждение</span></div>
+      <div class="r"><div class="num num-s">02</div><div class="h3">Приведите арендатора</div><p class="small">Клиенты ищут малый формат на&nbsp;первом этаже — у&nbsp;нас есть блоки</p><span class="cap todo">комиссия</span></div>
+      <div class="r"><div class="num num-s">03</div><div class="h3">Откройте свой объект</div><p class="small">Научим считать, договариваться и&nbsp;запускать — на&nbsp;интенсиве</p><span class="cap">лист 39</span></div>
+      <div class="r"><div class="num num-s">04</div><div class="h3">Приходите на ужин</div><p class="small">Разберём ваши вопросы и&nbsp;покажем объекты вживую</p><span class="cap">лист 38</span></div>
+    </div>
+  </div>
+  <aside class="note"><p>Этого слайда нет в голосовом — предлагаем добавить, потому что зал состоит из риэлторов и брокеров: им важно понять, как они могут заработать на теме.</p></aside>
+</section>
+
+<!-- 38 · Бизнес-ужин -->
+<section class="slide dark s-dinner" data-section="07 — Присоединяйтесь" data-title="Бизнес-ужин">
+  <div class="frame">
+    <div class="dn-text">
+      <div class="eyebrow r">Приглашение</div>
+      <h2 class="h-xl r">Бизнес-ужин</h2>
+      <div class="dn-when r"><span class="num num-m">8 <span class="todo">месяц</span></span><span class="h3"><span class="todo">время</span> · ресторан <span class="todo">название</span></span></div>
+      <ul class="lines dn-list">
+        <li class="r"><span class="n">01</span><span class="h4">Покажу объекты и цифры вживую</span><span></span></li>
+        <li class="r"><span class="n">02</span><span class="h4">Разберём, как открыть первый объект</span><span></span></li>
+        <li class="r"><span class="n">03</span><span class="h4">Знакомство с командой и коллегами</span><span></span></li>
+      </ul>
+      <p class="small r">Количество мест ограничено — <span class="todo">сколько</span></p>
+    </div>
+    <div class="dn-qr r">
+      <div class="slot qr-slot"><span>QR · запись на ужин</span></div>
+      <div class="cap">Запись по QR-коду</div>
+    </div>
+  </div>
+  <aside class="note"><p>В голосовом: «ближайший бизнес-ужин 8 числа в ресторане … запись по QR-коду». Название ресторана в расшифровке не распозналось — уточнить. Нужен QR на форму записи.</p></aside>
+</section>
+
+<!-- 39 · Личный интенсив -->
+<section class="slide s-intensive" data-section="07 — Присоединяйтесь" data-title="Личный интенсив">
+  <div class="frame">
+    <div class="in-text">
+      <div class="eyebrow r">Для тех, кто хочет так же</div>
+      <h2 class="h1 r">Личный интенсив по&nbsp;субаренде</h2>
+      <p class="lead r">Научу запускать объекты так, как это делаем мы, — чтобы у&nbsp;вас был стабильный доход.</p>
+    </div>
+    <dl class="in-list">
+      <div class="r"><dt class="cap">Формат</dt><dd class="h3">Лично с&nbsp;Артёмом · <span class="todo">онлайн / офлайн</span></dd></div>
+      <div class="r"><dt class="cap">Длительность</dt><dd class="h3 todo">уточнить</dd></div>
+      <div class="r"><dt class="cap">Практика</dt><dd class="h3">Выезды на&nbsp;объекты, разбор ваших помещений и&nbsp;финмоделей</dd></div>
+      <div class="r"><dt class="cap">Результат</dt><dd class="h3">Свой объект субаренды и&nbsp;понятная экономика</dd></div>
+      <div class="r"><dt class="cap">Запись</dt><dd class="h3"><span class="todo">QR / телефон</span></dd></div>
+    </dl>
+  </div>
+  <aside class="note"><p>В голосовом формат обрывается на «личный интенсив, мастер…». Уточнить: интенсив или мастер-майнд, длительность, стоимость, количество мест.</p></aside>
+</section>
+
+<!-- 40 · Давайте дружить -->
+<section class="slide s-final" data-section="Контакты" data-title="Давайте дружить">
+  <div class="frame">
+    <div class="fn-text">
+      <div class="eyebrow r">Спасибо</div>
+      <h2 class="h-xl r">Давайте дружить</h2>
+      <div class="fn-phone r"><span class="num num-m">+7 961 296-90-00</span><span class="cap">Артём Панасенко</span></div>
+      <p class="body r">Записывайтесь на&nbsp;бизнес-ужин и&nbsp;интенсив</p>
+    </div>
+    <div class="fn-qr">
+      <figure class="r"><div class="qr"><img src="assets/img/qr-telegram.jpg" alt="QR-код Telegram"></div><figcaption class="cap">Telegram</figcaption></figure>
+      <figure class="r"><div class="qr"><img src="assets/img/qr-max.jpg" alt="QR-код MAX"></div><figcaption class="cap">MAX</figcaption></figure>
+    </div>
+    <svg class="plan fn-plan" viewBox="-20 -20 640 440" aria-hidden="true">
+      <path class="wall ln" style="--i:4" d="M0 70H190V0H600V400H0Z"/>
+      <path class="part ln" style="--i:8" d="M321 0V400M496 0V400M496 327H600"/>
+    </svg>
+  </div>
+</section>
+
+</main>
+
+<div class="ui-progress"></div>
+<div class="ui-hint">← → листать · O обзор · N заметки · D скрыть пометки · F полный экран</div>
+<div class="ui-notes"></div>
+<div class="overview"><div class="ov-head"><span>Все слайды</span><span>Esc — закрыть</span></div><div class="ov-grid"></div></div>
+
+<script src="assets/js/deck.js"></script>
+</body>
+</html>
